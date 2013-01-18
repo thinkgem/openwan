@@ -46,4 +46,4 @@ OpenWan媒媒体资产管理系统集成了先进的硬件架构，采用MPEG-2�
 
 ## 更多文档
 
-[OpenWan介绍演示.docx]()
+[OpenWan介绍演示.docx](https://github.com/thinkgem/openwan/raw/master/OpenWan%E4%BB%8B%E7%BB%8D%E6%BC%94%E7%A4%BA.docx)
