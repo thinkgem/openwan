@@ -1,0 +1,82 @@
+﻿Copyright (c) 2012-2013 WangZhen(ThinkGem@163.COM) All rights reserved.
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+    * Redistributions of source code must retain the above copyright notice,
+	  this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above copyright notice,
+	  this list of conditions and the following disclaimer in the documentation
+	  and/or other materials provided with the distribution.
+    * Neither the name of the "JeeSite" nor the names of its contributors may
+	  be used to endorse or promote products derived from this software without
+	  specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+中文解释：
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+Copyright (c) 2012-2013 著作权由王震（ThinkGem@163.COM）所有。著作权人保留一切权利。
+
+这份授权条款，在使用者符合以下三条件的情形下，授予使用者使用及再散播本
+软件包装原始码及二进位可执行形式的权利，无论此包装是否经改作皆然：
+
+	* 对于本软件源代码的再散播，必须保留上述的版权宣告、此三条件表列，以
+	    及下述的免责声明。
+	* 对于本套件二进位可执行形式的再散播，必须连带以文件以及／或者其他附
+	    于散播包装中的媒介方式，重制上述之版权宣告、此三条件表列，以及下述
+	    的免责声明。
+	* 未获事前取得书面许可，不得使用"OpenWan"或本软件贡献者之名称，
+	    来为本软件之衍生物做任何表示支持、认可或推广、促销之行为。
+
+免责声明：本软件是由加州大学董事会及本软件之贡献者以现状（"as is"）提供，
+本软件包装不负任何明示或默示之担保责任，包括但不限于就适售性以及特定目
+的的适用性为默示性担保。加州大学董事会及本软件之贡献者，无论任何条件、
+无论成因或任何责任主义、无论此责任为因合约关系、无过失责任主义或因非违
+约之侵权（包括过失或其他原因等）而起，对于任何因使用本软件包装所产生的
+任何直接性、间接性、偶发性、特殊性、惩罚性或任何结果的损害（包括但不限
+于替代商品或劳务之购用、使用损失、资料损失、利益损失、业务中断等等），
+不负任何责任，即在该种使用已获事前告知可能会造成此类损害的情形下亦然。
+
+http://zh.wikipedia.org/wiki/BSD%E8%AE%B8%E5%8F%AF%E8%AF%81
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+部分摘录：
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+三、权利义务
+
+（一） 被授权人权利
+
+   允许商业或私有使用。
+
+（二） 被授权人义务
+
+   1. 在原始码的重制物中一定要保有本授权条款的著作权标示内容。
+   2. 以二进制制格式呈现的重制物必须再现本授权条款的著作权声明和内容。
+   3. 在没有事前书面同意的情况下，「OpenWan」均不得被用于支持或宣传从既有软件衍生出的产品（不为产品背书）。ORGANIZATION视使用BSD的使用者名称而定。
+
+四、其他重要特性
+
+   1. 可与其他授权条款并存。
+   2. 是一个近乎公共领域的授权条款，一般个人或组织可以为了使授权条款内容符合自身
+需求而更改”University of California”此一标示。
+   3. 使用BSD的软件程序代码可以被任意使用，代表的是在开放源码和封闭源码软件上均可
+利用采用此类授权条款的程序代码。
+   4. 简单的免责条款。
+   5. 三条款BSD是由自由软件基金会（FSF）所认可的自由软件授权条款，也被开放源码组
+织（OSI）认可为开放源码授权条款。并与GPL相容。
+
+
+
