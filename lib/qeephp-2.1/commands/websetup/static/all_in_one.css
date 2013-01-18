@@ -1,0 +1,915 @@
+@charset "UTF-8";
+/**
+ * "Yet Another Multicolumn Layout" - (X)HTML/CSS Framework
+ *
+ * (en) YAML core stylesheet
+ * (de) YAML Basis-Stylesheet
+ *
+ * Don't make any changes in this file!
+ * Your changes should be placed in any css-file in your own stylesheet folder.
+ *
+ * @copyright       Copyright 2005-2008, Dirk Jesse
+ * @license         CC-A 2.0 (http://creativecommons.org/licenses/by/2.0/),
+ *                  YAML-C (http://www.yaml.de/en/license/license-conditions.html)
+ * @link            http://www.yaml.de
+ * @package         yaml
+ * @version         3.0.5
+ * @revision        $Revision: 189 $
+ * @lastmodified    $Date: 2008-05-24 08:26:23 +0200 (Sa, 24 Mai 2008) $
+ */
+
+@media all
+{
+ /*------------------------------------------------------------------------------------------------------*/
+
+ /**
+  * @section browser reset
+  * @see     http://www.yaml.de/en/documentation/css-components/base-stylesheet.html
+  */
+
+  /* (en) Global reset of paddings and margins for all HTML elements */
+  /* (de) Globales Zurücksetzen der Innen- und Außenabstände für alle HTML-Elemente */
+  * { margin:0; padding: 0; }
+
+  /* (en) Correction: margin/padding reset caused too small select boxes. */
+  /* (de) Korrektur: Das Zurücksetzen der Abstände verursacht zu kleine Selectboxen. */
+  option { padding-left: 0.4em; }
+
+ /**
+  * (en) Global fix of the Italics bugs in IE 5.x and IE 6
+  * (de) Globale Korrektur des Italics Bugs des IE 5.x und IE 6
+  *
+  * @bugfix
+  * @affected   IE 5.x/Win, IE6
+  * @css-for    IE 5.x/Win, IE6
+  * @valid      yes
+  */
+  * html body * { overflow:visible; }
+  * html iframe, * html frame { overflow:auto; }
+  * html frameset { overflow:hidden; }
+
+  /* (en) Forcing vertical scrollbars in Netscape, Firefox and Safari browsers */
+  /* (de) Erzwingen vertikaler Scrollbalken in Netscape, Firefox und Safari Browsern */
+  html { height: 100%; margin-bottom: 1px; }
+  body {
+    /* (en) Fix for rounding errors when scaling font sizes in older versions of Opera browser */
+    /* (de) Beseitigung von Rundungsfehler beim Skalieren von Schriftgrößen in älteren Opera Versionen */
+    font-size: 100.01%;
+
+    /* (en) Standard values for colors and text alignment */
+    /* (de) Vorgabe der Standardfarben und Textausrichtung */
+    color: #000;
+    background: #fff;
+    text-align: left;
+  }
+
+  /* (en) Clear borders for <fieldset> and <img> elements */
+  /* (de) Rahmen für <fieldset> und <img> Elemente löschen */
+  fieldset, img { border: 0 solid; }
+
+  /* (en) new standard values for lists, blockquote and cite */
+  /* (de) Neue Standardwerte für Listen & Zitate */
+  ul, ol, dl { margin: 0 0 1em 1em }
+  li { margin-left: 1.5em; line-height: 1.5em; }
+
+  dt { font-weight: bold; }
+  dd { margin: 0 0 1em 2em; }
+
+  blockquote { margin: 0 0 1em 1.5em; }
+
+ /*------------------------------------------------------------------------------------------------------*/
+
+ /**
+  * @section base layout | Basis Layout
+  * @see     http://www.yaml.de/en/documentation/css-components/base-stylesheet.html
+  *
+  * |-------------------------------|
+  * | #header                       |
+  * |-------------------------------|
+  * | #col1   | #col3     | #col2   |
+  * | 200 px  | flexible  | 200px   |
+  * |-------------------------------|
+  * | #footer                       |
+  * |-------------------------------|
+  */
+
+  #header { position:relative; }
+
+  /* (en) Text Alignment for #topnav content */
+  /* (de) Textausrichtung für #topnav Inhalte */
+  #topnav { text-align: right; }
+
+  /* (en) Absolute positioning only within #header */
+  /* (de) Absolute Positionierung erfolgt nur innerhalb von #header */
+  #header #topnav {
+    position:absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  /* (en) Backup for correct positioning */
+  /* (de) Absicherung korrekte Positionierung */
+  #header, #nav, #main, #footer { clear:both; }
+
+  /* (en/de) Standard: 200 Pixel */
+  #col1 { float: left; width: 200px }
+  /* (en/de) Standard: 200 Pixel */
+  #col2 { float:right; width: 200px }
+  /* (en) Standard: center column with flexible width */
+  /* (de) Standard: Flexible mittlere Spalte */
+  #col3 { width:auto; margin: 0 200px }
+
+  /* (en) Preparation for absolute positioning within content columns */
+  /* (de) Vorbereitung für absolute Positionierungen innerhalb der Inhaltsspalten */
+  #col1_content { padding: 0 10px 0 20px }
+  #col2_content { padding: 0 20px 0 10px }
+  #col3_content { padding: 0 10px }
+
+
+ /*------------------------------------------------------------------------------------------------------*/
+
+ /**
+  * @section generic classes for layout switching | Generische Klassen zur Layoutumschaltung
+  * @see     http://www.yaml.de/en/documentation/css-components/base-stylesheet.html
+  *
+  * .hidecol1 -> 2-column-layout (using #col2 and #col3)
+  * .hidecol2 -> 2-column-layout (using #col1 and #col3)
+  * .hideboth -> single-column-layout (using #col3)
+  */
+
+  .hideboth #col3 { margin-left: 0; margin-right: 0; }
+  .hidecol1 #col3 { margin-left: 0; margin-right: 200px; }
+  .hidecol2 #col3 { margin-left: 200px; margin-right: 0; }
+
+  .hideboth #col1, .hideboth #col2, .hidecol1 #col1, .hidecol2 #col2 { display:none; }
+
+ /*------------------------------------------------------------------------------------------------------*/
+
+ /**
+  * @section clearing methods
+  * @see     http://yaml.de/en/documentation/basics/general.html
+  */
+
+  /* (en) clearfix method for clearing floats */
+  /* (de) Clearfix-Methode zum Clearen der Float-Umgebungen */
+   .clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+
+  /* (en) essential for Safari browser !! */
+  /* (de) Diese Angabe benötigt der Safari-Browser zwingend !! */
+  .clearfix { display: block; }
+
+  /* (en) overflow method for clearing floats */
+  /* (de) Overflow-Methode zum Clearen der Float-Umgebungen */
+  .floatbox { overflow:hidden; }
+
+  /* (en) IE-Clearing: Only used in Internet Explorer, switched on in iehacks.css */
+  /* (de) IE-Clearing: Benötigt nur der Internet Explorer und über iehacks.css zugeschaltet */
+  #ie_clearing { display: none; }
+
+ /*------------------------------------------------------------------------------------------------------*/
+
+ /**
+  * @section subtemplates
+  * @see     http://www.yaml.de/en/documentation/practice/subtemplates.html
+  */
+
+  .subcolumns { width: 100%; overflow:hidden; }
+
+  /* (en) alternative class for optional support of old Mozilla/Netscape browers */
+  /* (de) Alternative Klasse zur optionalen Unterstützung alter Mozilla/Netscape-Brower */
+  .subcolumns_oldgecko { width: 100%; float:left; }
+
+  .c50l, .c25l, .c33l, .c38l, .c66l, .c75l, .c62l {float: left; }
+  .c50r, .c25r, .c33r, .c38r, .c66r, .c75r, .c62r {float: right; margin-left: -5px; }
+
+  .c25l, .c25r { width: 25%; }
+  .c33l, .c33r { width: 33.333%; }
+  .c50l, .c50r { width: 50%; }
+  .c66l, .c66r { width: 66.666%; }
+  .c75l, .c75r { width: 75%; }
+  .c38l, .c38r { width: 38.2%; }
+  .c62l, .c62r { width: 61.8%; }
+
+  .subc  { padding: 0 0.5em; }
+  .subcl { padding: 0 1em 0 0; }
+  .subcr { padding: 0 0 0 1em; }
+
+ /*------------------------------------------------------------------------------------------------------*/
+
+ /**
+  * @section hidden elements | Versteckte Elemente
+  * @see     http://www.yaml.de/en/documentation/basics/skip-links.html
+  *
+  * (en) skip links and hidden content
+  * (de) Skip-Links und versteckte Inhalte
+  */
+
+  /* (en) classes for invisible elements in the base layout */
+  /* (de) Klassen für unsichtbare Elemente im Basislayout */
+  .skip, .hideme, .print {
+    position: absolute;
+    top: -1000em;
+    left: -1000em;
+    height: 1px;
+    width: 1px;
+  }
+
+  /* (en) make skip links visible when using tab navigation */
+  /* (de) Skip-Links für Tab-Navigation sichtbar schalten */
+  .skip:focus, .skip:active {
+    position: static;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: auto;
+  }
+}
+
+@media all
+{
+  #nav_main {
+    /* (en) This image is mainly transparent */
+    /* (de) Dieses Bild ist größtenteils transparent */
+    float: left;
+    width: 100%;
+	font-size: 14px;
+  }
+
+  #nav_main ul {
+    line-height: 1em;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 20px;
+    white-space: nowrap;
+  }
+
+  #nav_main li {
+    /* (en) Repeat the main color from the image */
+    /* (de) Wiederholung der Hauptfarbe aus der Bilddatei */
+    float: left;
+    margin: 0;
+    padding: 0 0 0 3px;
+  }
+
+  #nav_main a,
+  #nav_main strong {
+    /* (en) This image is mainly transparent */
+    /* (de) Dieses Bild ist größtenteils transparent */
+    color: #cfebf6;
+    display: block;
+    font-weight: normal;
+    padding: 5px 11px 3px 8px;
+    text-decoration: none;
+    text-transform: none;
+
+    /**
+     * @bugfix
+     * @affected   IE5.x, IE6
+     * @css-for    all browsers
+     * @valid      yes
+     */
+    width: auto; /* only IE 5.x */
+    width/**/:/**/ .1em; /* only IE 6.0 */
+  }
+
+  /**
+   * @bugfix
+   * @affected   IE5.x, IE6
+   * @css-for    all browsers
+   * @valid      yes
+   */
+  #nav_main > ul a,
+  #nav_main > ul strong { width: auto; }  /* for other browsers */
+
+  #nav_main ul li:focus,
+  #nav_main ul li:hover,
+  #nav_main ul li:active {
+    /* (en) Repeat the main color from the image */
+    /* (de) Wiederholung der Hauptfarbe aus der Bilddatei */
+/*    background-color: #c4d0dc;
+    background-position: 0 -150px;*/
+  }
+
+  #nav_main a:focus,
+  #nav_main a:hover,
+  #nav_main a:active { color: #d54e21; }
+
+  #nav_main #current {
+    /* (en) Repeat the main color from the image */
+    /* (de) Wiederholung der Hauptfarbe aus der Bilddatei */
+    border: 0;
+  }
+
+  #nav_main #current a,
+  #nav_main #current strong {
+    /* (en) This image is mainly transparent */
+    /* (de) Dieses Bild ist größtenteils transparent */
+	-moz-border-radius-topleft: 4px;
+	-khtml-border-top-left-radius: 4px;
+	-webkit-border-top-left-radius: 4px;
+	border-top-left-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	-khtml-border-top-right-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	border-top-right-radius: 4px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	border-bottom: none;
+
+    color: #d54e21;
+    font-weight: bold;
+    padding-bottom: 4px;
+    padding-top: 5px;
+	background-color: #fff;
+  }
+}
+
+@media screen, projection
+{
+  /*-------------------------------------------------------------------------*/
+
+  /* (en) Marginal areas & page background */
+  /* (de) Randbereiche & Seitenhintergrund */
+  body { background: #464646 none; padding: 0px 0; }
+
+  /* Layout Alignment | Layout-Ausrichtung */
+  #page_margins { margin: 0 auto; }
+
+  /* Layout Properties | Layout-Eigenschaften */
+  #page_margins { width: 100%;  min-width: 920px; max-width: none; background: #fff; }
+  #page { padding: 10px 15px 10px 10px; }
+  #header { padding: 0.8em 2em 0.2em 20px; color: #000; background-color: #14568a; }
+  #topnav { color: #aaa; }
+  #nav { overflow:hidden; }
+  #nav_main {  background-color: #14568a; }
+  #teaser { clear:both; padding: 0 20px; margin: 10px 0; }
+  #main { margin: 10px 0; background: #fff; }
+  #footer { padding: 10px 20px 40px 20px; color:#999; background: #464646; border-top: 1px #ddd solid; }
+
+  /* (en) navigation: horizontal adjustment | (de) horizontale Ausrichtung  */
+  #nav ul { margin-left: 20px; }
+
+  /*-------------------------------------------------------------------------*/
+
+  /**
+   * (en) Formatting content container
+   * (de) Formatierung der Inhalts-Container
+   *
+   */
+
+  /* (en/de) Standard: 200 Pixel */
+  #col1 { float: left; width: 200px }
+  /* (en/de) Standard: 200 Pixel */
+  #col2 { float:right; width: 240px }
+  /* (en) Standard: center column with flexible width */
+  /* (de) Standard: Flexible mittlere Spalte */
+  #col3 { width:auto; margin: 0 240px 0px 200px }
+  #col3_full { width:auto; margin: 0 0 0 200px }
+
+  /* (en) Preparation for absolute positioning within content columns */
+  /* (de) Vorbereitung für absolute Positionierungen innerhalb der Inhaltsspalten */
+  #col1_content { padding: 0 10px 0 20px }
+  #col2_content { padding: 0 20px 0 10px }
+  #col3_content { padding: 0 10px }
+
+  /* set column dividers */
+  #col3 { border-left: 1px #ddd dotted }
+  #col3 { border-right: 1px #ddd dotted }
+
+  /*-------------------------------------------------------------------------*/
+
+  #page_margins {
+	border: 0 none;
+  }
+
+  #page {
+	border: 0 none;
+	padding: 0px;
+  }
+
+
+  /*-------------------------------------------------------------------------*/
+
+  .clearfloat {
+  	clear: both;
+	float: none;
+  }
+
+}
+
+@media all
+{
+  /**
+   * Fonts
+   * (en) font-family and font-size selection for headings and standard text elements
+   * (de) Zeichensatz und Schriftgrößen für Überschriften und übliche Text-Elemente
+   *
+   * @section content-fonts
+   */
+
+  /* (en) reset font size for all elements to standard (16 Pixel) */
+  /* (de) Alle Schriftgrößen auf Standardgröße (16 Pixel) zurücksetzen */
+  html * { font-size: 100.01%; }
+
+  /* (en) reset monospaced elements to font size 16px in Gecko browsers */
+  /* (de) Schriftgröße von monospaced Elemente auf 16 Pixel setzen */
+  textarea, pre, tt, code {
+	font-family:"Courier New", Courier, monospace;
+  }
+
+  /* (en) base layout gets standard font size 12px */
+  /* (de) Basis-Layout erhält Standardschriftgröße von 12 Pixeln */
+  body {
+    font-family: 'Trebuchet MS', Verdana, Helvetica, Arial, sans-serif;
+    font-size: 75.00%;
+  }
+
+  h1,h2,h3,h4,h5,h6 { font-weight:bold; margin: 0 0 0.25em 0; color: #333; }
+  h1 { font-size: 200% }                        /* 24px */
+  h2 { font-size: 166.67% }                     /* 20px */
+  h3 { font-size: 150%; padding-bottom: 0.3em; margin-bottom: 0.6em; color: #666; border-bottom: 1px solid #999; }                        /* 18px */
+  h4 { font-size: 133.33% }                     /* 16px */
+  h5 { font-size: 116.67% }                     /* 14px */
+  h6 { font-size: 116.67%; font-style:italic; } /* 14px */
+
+  p { line-height: 1.5em; margin: 0 0 1em 0; }
+
+  #header h1 { color: #cfebf6; }
+
+  /* ### Lists | Listen  #### */
+
+  ul, ol, dl { line-height: 1.5em; margin: 0 0 1em 1em; }
+  li { margin-left: 1.5em; line-height: 1.5em; }
+
+  dt { font-weight: bold; }
+  dd { margin: 0 0 1em 2em; }
+
+  /* ### text formatting | Textauszeichnung ### */
+
+  cite, blockquote { font-style:italic; }
+  blockquote { margin: 0 0 1em 1.5em; }
+
+  strong,b { font-weight: bold; }
+  em,i { font-style:italic; }
+
+  pre, code { font-family: monospace; font-size: 1.1em; }
+
+  acronym, abbr {
+    letter-spacing: .07em;
+    border-bottom: .1em dashed #c00;
+    cursor: help;
+  }
+
+  /**
+   * Generic Content Classes
+   * (en) standard classes for positioning and highlighting
+   * (de) Standardklassen zur Positionierung und Hervorhebung
+   *
+   * @section content-generic-classes
+   */
+
+  .note { background: #dfd; padding: 1em; border-top: 1px #bdb dotted; border-bottom: 1px #bdb dotted; }
+  .important { background: #ffd; padding: 1em; border-top: 1px #ddb dotted; border-bottom: 1px #ddb dotted; }
+  .warning { background: #fdd; padding: 1em; border-top: 1px #dbb dotted; border-bottom: 1px #dbb dotted; }
+
+  .float_left { float: left; display:inline; margin-right: 1em; margin-bottom: 0.15em; }
+  .float_right { float: right; display:inline; margin-left: 1em; margin-bottom: 0.15em; }
+  .center { text-align:center; margin: 0.5em auto; }
+
+  /**
+   * External Links
+   *
+   * (en) Formatting of hyperlinks
+   * (de) Gestaltung von Hyperlinks
+   *
+   */
+
+  a { color: #900; text-decoration:none; }
+  a:focus,
+  a:hover,
+  a:active { background-color: #fee; text-decoration:underline; }
+
+  #topnav a { color: #eee; font-weight: bold; background:transparent; text-decoration:none; }
+  #topnav a:focus,
+  #topnav a:hover,
+  #topnav a:active{ text-decoration:underline; background-color: transparent; }
+
+  #footer a { color: #eee; background:transparent; font-weight: bold; }
+  #footer a:focus,
+  #footer a:hover,
+  #footer a:active {  background-color: transparent; text-decoration:underline; }
+
+  /**
+   * (en) Emphasizing external Hyperlinks via CSS
+   * (de) Hervorhebung externer Hyperlinks mit CSS
+   *
+   * @section             content-external-links
+   * @app-yaml-default    disabled
+   */
+
+  /*
+  #main a[href^="http://www.my-domain.com"],
+  #main a[href^="https://www.my-domain.com"]
+  {
+    padding-left: 12px;
+    background-image: url('your_image.gif');
+    background-repeat: no-repeat;
+    background-position: 0 0.45em;
+  }
+  */
+  
+  .hide { display: none; }
+
+  /**
+   * Tables | Tabellen
+   * (en) Generic classes for table-width and design definition
+   * (de) Generische Klassen für die Tabellenbreite und Gestaltungsvorschriften für Tabellen
+   *
+   * @section content-tables
+   */
+
+  table { width: auto; border-collapse:collapse; margin-bottom: 0.5em; }
+  table.full { width: 99%; }
+  table.fixed { table-layout:fixed; }
+  table.data { border: 1px solid #ccc; }
+
+  th,td { padding: 0.5em; }
+  table.data thead { border-bottom: 1px solid #ccc; }
+  table.data thead th { background-color: #464646; color: #d7d7d7; }
+  table.data tbody tr { border-top: 1px solid #ccc; }
+  table.data tbody tr.odd { background-color: #f9f9f9; }
+  table.data tbody tr.even { background-color: #fff; }
+  table.data tbody tr:hover { background-color: #cef; }
+
+  /**
+   * Miscellaneous | Sonstiges
+   *
+   * @section content-misc
+   */
+
+  #submenu {
+    margin-top: 0.2em;
+  }
+
+  hr {
+    color: #fff;
+    background:transparent;
+    margin: 0 0 0.5em 0;
+    padding: 0 0 0.5em 0;
+    border:0;
+    border-bottom: 1px #000 solid;
+  }
+
+  input {
+	margin: 2px 0 2px 0;
+  }
+
+  input.field,
+  textarea.field {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	border: 1px solid #999;
+	padding: 3px;
+	#padding-bottom: 2px;
+	line-height: 16px;
+	vertical-align: middle;
+  }
+
+  .field:hover {
+  	border-color: #535353;
+  }
+
+  input.button {
+	padding: 4px 9px 3px 9px;
+	#padding: 3px 3px 0px 3px;
+	font-size: 12px;
+	line-height: 16px;
+	cursor: pointer;
+	text-decoration: none;
+  	background-color: #e5e5e5;
+	color: #07273e;
+	border: 1px solid #a3a3a3;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	vertical-align: middle;
+  }
+
+  .button[disabled], .button:disabled {
+	background-color: #999;
+  }
+
+  .button:hover {
+	border-color: #535353;
+	color: #d54e21;
+  }
+
+  .toolbar .button {
+  	background-color: #8ebddc;
+	border-color: #5396c5;
+	color: #000;
+  }
+
+  .toolbar .button:hover {
+    background-color: #a6d2e5;
+	border-color: #328ab2;
+	color: #f00;
+  }
+
+  select {
+  	font-size: 12px;
+	padding: 3px;
+	border: 1px solid #a3a3a3;
+	height: 25px;
+	margin: 0px;
+	#margin-top: 4px;
+	_margin-top: 0px;
+	vertical-align: middle;
+  }
+
+  select:hover {
+  	border-color: #535353;
+  }
+
+  option {
+  	padding: 4px;
+  }
+
+  .toolbar {
+	padding: 4px 8px 4px 8px;
+	background-color: #cfebf7;
+	margin-bottom: 4px;
+  }
+
+  /** form **/
+
+  form {
+  	margin: 0px;
+	padding: 0px 4px 0px 4px;
+  }
+
+  .form-table {
+    background-color: #cfebf7;
+	border-collapse: collapse;
+	margin-top: 0em;
+	margin-bottom: 1.2em;
+	width: 100%;
+  }
+
+  .form-table td {
+	margin-bottom: 9px;
+	padding: 10px;
+	line-height: 20px;
+	border-bottom: 8px solid #fff;
+	font-size: 12px;
+  }
+
+  .form-table th {
+  	font-size: 14px;
+	font-weight: bold;
+	vertical-align: top;
+	text-align: left;
+	padding: 18px;
+	width: 150px;
+	border-bottom: 8px solid #fff;
+  }
+
+  .form-invalid {
+	background-color: #ffebe8 !important;
+  }
+
+  .form-invalid input {
+	border-color: #c00 !important;
+  }
+
+}
+
+@media all
+{
+  #submenu {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 0 1.5em 0;
+    list-style-type: none;
+    border-top: 2px #ddd solid;
+    border-bottom: 2px #ddd solid;
+  }
+
+  #submenu ul { list-style-type: none; margin:0; padding: 0; }
+  #submenu li { float:left; width: 100%; margin:0; padding: 0; }
+
+  #submenu a,
+  #submenu strong {
+    display:block;
+    width: 90%;
+    padding: 3px 0px 3px 10%;
+    text-decoration: none;
+    background-color:#fff;
+    color: #444;
+    border-bottom: 1px #eee solid;
+  }
+
+  /* Menu Title */
+  #submenu li#title {
+    width: 90%;
+    padding: 3px 0px 3px 10%;
+    font-weight: bold;
+    color: #444;
+    background-color: #fff;
+    border-bottom: 4px #888 solid;
+  }
+
+  #submenu li span {
+    display:block;
+    width: 90%;
+    padding: 3px 0px 3px 10%;
+    font-weight: bold;
+    border-bottom: 1px #ddd solid;
+  }
+
+  /* Level 1 */
+  #submenu li#active,
+  #submenu li strong {
+    width: 90%;
+    padding: 3px 0px 3px 10%;
+    font-weight: bold;
+    color: #333;
+    background-color:#88bcf3;
+    border-bottom: 1px #eee solid;
+  }
+  #submenu li a { width: 90%; padding-left: 10%; background-color:#fff; color: #444; }
+  #submenu li a:focus,
+  #submenu li a:hover,
+  #submenu li a:active { background-color:#c8ddf3; color: #666; }
+
+  #submenu li#active a {
+    display: inline;
+    width: auto;
+    padding: inherit;
+    text-decoration: none;
+    background-color:#88bcf3;
+    color: #333;
+	border: none;
+  }
+}
+
+.ui-wrapper { border: 1px solid #d9eaf4; }
+.ui-wrapper input, .ui-wrapper textarea { border: 0; }
+
+/* Caution! Ensure accessibility in print and other media types... */
+@media projection, screen { /* Use class for showing/hiding tab content, so that visibility can be better controlled in different media types... */
+    .ui-tabs-hide {
+        display: none;
+    }
+}
+
+
+/* ------------------------------------------------------------ */
+
+/* Hide useless elements in print layouts... */
+@media print {
+    .ui-tabs-nav {
+        display: none;
+    }
+}
+
+/* Skin */
+.ui-tabs-nav, .ui-tabs-panel {
+    font-size: 100%;
+}
+.ui-tabs-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 3px;
+	height: 27px;
+}
+.ui-tabs-nav:after { /* clearing without presentational markup, IE gets extra treatment */
+    display: block;
+    clear: both;
+	float: none;
+    content: " ";
+}
+.ui-tabs-nav li {
+    float: left;
+    margin: 0 0 0 2px;
+    font-weight: bold;
+}
+.ui-tabs-nav a, .ui-tabs-nav a span {
+    float: left; /* fixes dir=ltr problem and other quirks IE */
+    padding: 0 12px;
+    background-color: #c7dcf3;
+	color: #999;
+	-moz-border-radius-topleft: 2px;
+	-khtml-border-top-left-radius: 2px;
+	-webkit-border-top-left-radius: 2px;
+	border-top-left-radius: 2px;
+	-moz-border-radius-topright: 2px;
+	-khtml-border-top-right-radius: 2px;
+	-webkit-border-top-right-radius: 2px;
+	border-top-right-radius: 2px;
+}
+.ui-tabs-nav a {
+    margin: 5px 0 0; /* position: relative makes opacity fail for disabled tab in IE */
+    padding-left: 0;
+    text-decoration: none;
+    white-space: nowrap; /* @ IE 6 */
+    outline: 0; /* @ Firefox, prevent dotted border after click */
+}
+.ui-tabs-nav a:link, .ui-tabs-nav a:visited {
+    color: #fff;
+}
+.ui-tabs-nav .ui-tabs-selected a {
+    position: relative;
+    top: 1px;
+    z-index: 2;
+    margin-top: 0;
+	background-color: #88bcf3;
+}
+.ui-tabs-nav a span {
+    padding-top: 1px;
+    padding-right: 0;
+    height: 20px;
+    line-height: 20px;
+}
+.ui-tabs-nav .ui-tabs-selected a span {
+	color: #333;
+    padding-top: 0;
+    height: 27px;
+	background-color: #88bcf3;
+    line-height: 27px;
+}
+.ui-tabs-nav .ui-tabs-selected a:link,
+.ui-tabs-nav .ui-tabs-selected a:visited,
+.ui-tabs-nav .ui-tabs-disabled a:link,
+.ui-tabs-nav .ui-tabs-disabled a:visited { /* @ Opera, use pseudo classes otherwise it confuses cursor... */
+    cursor: text;
+	text-decoration: none;
+}
+.ui-tabs-nav a:hover,
+.ui-tabs-nav a:focus,
+.ui-tabs-nav a:active,
+.ui-tabs-nav .ui-tabs-unselect a:hover,
+.ui-tabs-nav .ui-tabs-unselect a:focus,
+.ui-tabs-nav .ui-tabs-unselect a:active { /* @ Opera, we need to be explicit again here now... */
+    cursor: pointer;
+	text-decoration: none;
+}
+.ui-tabs-nav a:hover {
+    background-color: #c7dcf3;
+}
+.ui-tabs-nav .ui-tabs-selected a:hover {
+    background-color: #88bcf3;
+}
+.ui-tabs-disabled {
+    opacity: .4;
+    filter: alpha(opacity=40);
+}
+.ui-tabs-nav .ui-tabs-disabled a:link, .ui-tabs-nav .ui-tabs-disabled a:visited {
+    color: #000;
+}
+.ui-tabs-panel {
+    border-top: 1px solid #88bcf3;
+    padding: 10px;
+    background: #fff; /* declare background color for container to avoid distorted fonts in IE while fading */
+}
+
+/*.ui-tabs-loading em {
+    padding: 0 0 0 20px;
+    background: url(loading.gif) no-repeat 0 50%;
+}*/
+
+/* Additional IE specific bug fixes... */
+* html .ui-tabs-nav { /* auto clear @ IE 6 & IE 7 Quirks Mode */
+    display: inline-block;
+}
+*:first-child+html .ui-tabs-nav  { /* auto clear @ IE 7 Standards Mode - do not group selectors, otherwise IE 6 will ignore complete rule (because of the unknown + combinator)... */
+    display: inline-block;
+}
+
+#redirect_message {
+	margin: 0 4em 4em 4em;
+	font-size: 14px;
+	padding: 2em;
+	border: 1px solid #cad9ea;
+}
+
+#redirect_message h3 {
+	height: 32px;
+	line-height: 32px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #333;
+}
+
+#redirect_message p {
+	padding: 20px;
+	line-height: 24px;
+	font-size: 14px;
+}

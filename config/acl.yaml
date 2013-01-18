@@ -1,0 +1,120 @@
+# <?php die(); ?>
+
+## 注意：书写时，缩进不能使用 Tab，必须使用空格
+
+#############################
+# 访问规则
+#############################
+
+# ACL_EVERYONE : 任何用户
+# ACL_HAS_ROLE : 具有任何角色的用户
+# ACL_NO_ROLE : 不具有任何角色的用户
+# ACL_NULL : 没有系统角色
+
+all_controllers: 
+  allow: "ADMIN"
+admin: 
+  all_controllers: 
+    allow: "ADMIN"
+  aclmanager: 
+    actions: 
+      all_actions: 
+        allow: "ADMIN"
+      index: 
+        allow: "ADMIN,SYSTEM"
+      user: 
+        allow: "ADMIN,SYSTEM"
+      useradd: 
+        allow: "ADMIN,SYSTEM,NORMAL"
+      useredit: 
+        allow: "ADMIN,SYSTEM"
+      group: 
+        allow: "ADMIN,SYSTEM"
+      groupview: 
+        allow: "ADMIN,SYSTEM"
+      groupbind: 
+        allow: "ADMIN,SYSTEM"
+      role: 
+        allow: "ADMIN,SYSTEM"
+      roleview: 
+        allow: "ADMIN,SYSTEM"
+      rolebind: 
+        allow: "ADMIN,SYSTEM"
+      permission: 
+        allow: "ADMIN,SYSTEM"
+      permissionrefresh: 
+        allow: "ADMIN,SYSTEM"
+      makeaclfile: 
+        allow: "ADMIN,SYSTEM"
+      level: 
+        allow: "ADMIN,SYSTEM"
+      levelview: 
+        allow: "ADMIN,SYSTEM"
+      userdel: 
+        allow: "ADMIN,SYSTEM"
+  default: 
+    actions: 
+      index: 
+        allow: ACL_EVERYONE
+      login: 
+        allow: ACL_NO_ROLE
+      logout: 
+        allow: ACL_HAS_ROLE
+  dictmanager: 
+    actions: 
+      all_actions: 
+        allow: "ADMIN"
+      index: 
+        allow: "ADMIN,SYSTEM"
+      category: 
+        allow: "ADMIN,SYSTEM"
+      categoryadd: 
+        allow: "ADMIN,SYSTEM"
+      categoryedit: 
+        allow: "ADMIN,SYSTEM"
+      categorydel: 
+        allow: "ADMIN,SYSTEM"
+      catalog: 
+        allow: "ADMIN,SYSTEM"
+      catalogadd: 
+        allow: "ADMIN,SYSTEM"
+      catalogedit: 
+        allow: "ADMIN,SYSTEM"
+      catalogdel: 
+        allow: "ADMIN,SYSTEM"
+  filecatalog: 
+    actions: 
+      all_actions: 
+        allow: "ADMIN"
+      index: 
+        allow: "ADMIN,SYSTEM"
+  fileputout: 
+    actions: 
+      all_actions: 
+        allow: "ADMIN"
+      index: 
+        allow: "ADMIN,SYSTEM"
+  filesearch: 
+    actions: 
+      all_actions: 
+        allow: "ADMIN"
+      index: 
+        allow: "ADMIN,SYSTEM"
+  fileupload: 
+    actions: 
+      all_actions: 
+        allow: "ADMIN"
+      index: 
+        allow: "ADMIN,SYSTEM"
+  usercenter: 
+    actions: 
+      index: 
+        allow: ACL_HAS_ROLE
+      changeinfo: 
+        allow: ACL_HAS_ROLE
+      changepassword: 
+        allow: ACL_HAS_ROLE
+default: 
+  actions: 
+    index: 
+      allow: ACL_EVERYONE

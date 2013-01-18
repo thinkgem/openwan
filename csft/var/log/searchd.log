@@ -1,0 +1,504 @@
+[Fri Aug  6 11:42:39.609 2010] [ 4136] accepting connections
+[Fri Aug  6 11:43:05.656 2010] [ 4136] shutdown complete
+[Fri Aug  6 12:16:17.500 2010] [ 1536] accepting connections
+[Fri Aug  6 12:54:00.765 2010] [ 1536] shutdown complete
+[Fri Aug  6 13:30:34.359 2010] [ 4140] accepting connections
+[Fri Aug  6 13:31:44.093 2010] [ 4140] shutdown complete
+[Fri Aug  6 13:32:04.265 2010] [ 3340] accepting connections
+[Fri Aug  6 13:35:03.656 2010] [ 3340] rotating index 'main': success
+[Fri Aug  6 13:35:03.656 2010] [ 3340] rotating finished
+[Fri Aug  6 13:35:03.703 2010] [ 3340] rotating indices (seamless=0)
+[Fri Aug  6 13:37:01.328 2010] [ 3340] rotating index 'main': success
+[Fri Aug  6 13:37:01.328 2010] [ 3340] rotating finished
+[Fri Aug  6 13:37:01.375 2010] [ 3340] rotating indices (seamless=0)
+[Fri Aug  6 13:37:51.421 2010] [ 3340] shutdown complete
+[Fri Aug  6 13:37:54.328 2010] [ 5536] accepting connections
+[Fri Aug  6 13:44:32.656 2010] [ 5536] shutdown complete
+[Fri Aug  6 14:02:19.765 2010] [ 4088] accepting connections
+[Fri Aug  6 14:03:50.468 2010] [ 4088] rotating index 'main': success
+[Fri Aug  6 14:03:50.468 2010] [ 4088] rotating finished
+[Fri Aug  6 14:03:50.515 2010] [ 4088] rotating indices (seamless=0)
+[Fri Aug  6 14:04:57.625 2010] [ 4088] rotating index 'main': success
+[Fri Aug  6 14:04:57.625 2010] [ 4088] rotating finished
+[Fri Aug  6 14:04:57.671 2010] [ 4088] rotating indices (seamless=0)
+[Fri Aug  6 14:05:23.000 2010] [ 4088] rotating index 'main': success
+[Fri Aug  6 14:05:23.000 2010] [ 4088] rotating finished
+[Fri Aug  6 14:05:23.046 2010] [ 4088] rotating indices (seamless=0)
+[Fri Aug  6 14:17:53.312 2010] [ 4088] WARNING: rotating index 'delta': rename 'D:/OpenWan/htdocs/trunk/csft/var/data/delta.sph' to 'D:/OpenWan/htdocs/trunk/csft/var/data/delta.old.sph' failed: No such file or directory
+[Fri Aug  6 14:17:53.312 2010] [ 4088] WARNING: rotating index 'delta': rename to .old failed; using old index
+[Fri Aug  6 14:17:53.312 2010] [ 4088] rotating finished
+[Fri Aug  6 14:17:53.359 2010] [ 4088] rotating indices (seamless=0)
+[Fri Aug  6 14:18:35.453 2010] [ 4088] WARNING: rotating index 'delta': rename 'D:/OpenWan/htdocs/trunk/csft/var/data/delta.sph' to 'D:/OpenWan/htdocs/trunk/csft/var/data/delta.old.sph' failed: No such file or directory
+[Fri Aug  6 14:18:35.453 2010] [ 4088] WARNING: rotating index 'delta': rename to .old failed; using old index
+[Fri Aug  6 14:18:35.453 2010] [ 4088] rotating finished
+[Fri Aug  6 14:18:35.515 2010] [ 4088] rotating indices (seamless=0)
+[Fri Aug  6 14:19:45.390 2010] [ 4088] WARNING: rotating index 'delta': rename 'D:/OpenWan/htdocs/trunk/csft/var/data/delta.sph' to 'D:/OpenWan/htdocs/trunk/csft/var/data/delta.old.sph' failed: No such file or directory
+[Fri Aug  6 14:19:45.390 2010] [ 4088] WARNING: rotating index 'delta': rename to .old failed; using old index
+[Fri Aug  6 14:19:45.390 2010] [ 4088] rotating finished
+[Fri Aug  6 14:19:45.437 2010] [ 4088] rotating indices (seamless=0)
+[Fri Aug  6 14:20:32.562 2010] [ 4088] rotating index 'delta': success
+[Fri Aug  6 14:20:32.562 2010] [ 4088] rotating finished
+[Fri Aug  6 14:20:32.609 2010] [ 4088] rotating indices (seamless=0)
+[Fri Aug  6 14:20:32.703 2010] [ 4088] rotating index 'main': success
+[Fri Aug  6 14:20:32.703 2010] [ 4088] rotating finished
+[Fri Aug  6 14:20:32.750 2010] [ 4088] rotating indices (seamless=0)
+[Fri Aug  6 14:22:35.125 2010] [ 4088] rotating index 'main': success
+[Fri Aug  6 14:22:35.125 2010] [ 4088] rotating finished
+[Fri Aug  6 14:22:35.171 2010] [ 4088] rotating indices (seamless=0)
+[Fri Aug  6 14:22:48.703 2010] [ 4088] rotating index 'delta': success
+[Fri Aug  6 14:22:48.703 2010] [ 4088] rotating finished
+[Fri Aug  6 14:22:48.750 2010] [ 4088] rotating indices (seamless=0)
+[Fri Aug  6 14:22:48.843 2010] [ 4088] rotating index 'main': success
+[Fri Aug  6 14:22:48.843 2010] [ 4088] rotating finished
+[Fri Aug  6 14:22:48.890 2010] [ 4088] rotating indices (seamless=0)
+[Fri Aug  6 14:24:38.640 2010] [ 4088] rotating index 'delta': success
+[Fri Aug  6 14:24:38.640 2010] [ 4088] rotating finished
+[Fri Aug  6 14:24:38.687 2010] [ 4088] rotating indices (seamless=0)
+[Fri Aug  6 14:24:38.781 2010] [ 4088] rotating index 'main': success
+[Fri Aug  6 14:24:38.781 2010] [ 4088] rotating finished
+[Fri Aug  6 14:24:38.828 2010] [ 4088] rotating indices (seamless=0)
+[Fri Aug  6 14:25:06.156 2010] [ 4088] rotating index 'delta': success
+[Fri Aug  6 14:25:06.156 2010] [ 4088] rotating finished
+[Fri Aug  6 14:25:06.218 2010] [ 4088] rotating indices (seamless=0)
+[Fri Aug  6 14:25:06.296 2010] [ 4088] rotating index 'main': success
+[Fri Aug  6 14:25:06.296 2010] [ 4088] rotating finished
+[Fri Aug  6 14:25:06.343 2010] [ 4088] rotating indices (seamless=0)
+[Fri Aug  6 14:25:46.031 2010] [ 4088] rotating index 'delta': success
+[Fri Aug  6 14:25:46.031 2010] [ 4088] rotating finished
+[Fri Aug  6 14:25:46.078 2010] [ 4088] rotating indices (seamless=0)
+[Fri Aug  6 14:25:46.125 2010] [ 4088] rotating index 'main': success
+[Fri Aug  6 14:25:46.125 2010] [ 4088] rotating finished
+[Fri Aug  6 14:25:46.171 2010] [ 4088] rotating indices (seamless=0)
+[Fri Aug  6 14:28:02.375 2010] [ 4088] rotating index 'main': success
+[Fri Aug  6 14:28:02.375 2010] [ 4088] rotating finished
+[Fri Aug  6 14:28:02.421 2010] [ 4088] rotating indices (seamless=0)
+[Fri Aug  6 14:28:02.515 2010] [ 4088] rotating index 'delta': success
+[Fri Aug  6 14:28:02.515 2010] [ 4088] rotating finished
+[Fri Aug  6 14:28:02.562 2010] [ 4088] rotating indices (seamless=0)
+[Fri Aug  6 14:28:02.640 2010] [ 4088] rotating index 'main': success
+[Fri Aug  6 14:28:02.640 2010] [ 4088] rotating finished
+[Fri Aug  6 14:28:02.687 2010] [ 4088] rotating indices (seamless=0)
+[Fri Aug  6 14:56:11.968 2010] [ 4088] rotating index 'delta': success
+[Fri Aug  6 14:56:11.968 2010] [ 4088] rotating finished
+[Fri Aug  6 14:56:12.015 2010] [ 4088] rotating indices (seamless=0)
+[Fri Aug  6 14:56:12.062 2010] [ 4088] rotating index 'main': success
+[Fri Aug  6 14:56:12.062 2010] [ 4088] rotating finished
+[Fri Aug  6 14:56:12.109 2010] [ 4088] rotating indices (seamless=0)
+[Fri Aug  6 15:25:54.984 2010] [ 4088] rotating index 'main': success
+[Fri Aug  6 15:25:54.984 2010] [ 4088] rotating finished
+[Fri Aug  6 15:25:55.046 2010] [ 4088] rotating indices (seamless=0)
+[Fri Aug  6 15:26:11.031 2010] [ 4088] rotating index 'delta': success
+[Fri Aug  6 15:26:11.031 2010] [ 4088] rotating finished
+[Fri Aug  6 15:26:11.078 2010] [ 4088] rotating indices (seamless=0)
+[Fri Aug  6 15:26:11.109 2010] [ 4088] rotating index 'main': success
+[Fri Aug  6 15:26:11.109 2010] [ 4088] rotating finished
+[Fri Aug  6 15:26:11.156 2010] [ 4088] rotating indices (seamless=0)
+[Fri Aug  6 15:26:15.562 2010] [ 4088] rotating index 'main': success
+[Fri Aug  6 15:26:15.562 2010] [ 4088] rotating finished
+[Fri Aug  6 15:26:15.625 2010] [ 4088] rotating indices (seamless=0)
+[Fri Aug  6 15:26:51.468 2010] [ 4088] shutdown complete
+[Fri Aug  6 15:27:17.171 2010] [ 4176] accepting connections
+[Fri Aug  6 15:27:35.593 2010] [ 4176] rotating index 'delta': success
+[Fri Aug  6 15:27:35.593 2010] [ 4176] rotating finished
+[Fri Aug  6 15:27:35.640 2010] [ 4176] rotating indices (seamless=0)
+[Fri Aug  6 15:27:35.671 2010] [ 4176] rotating index 'main': success
+[Fri Aug  6 15:27:35.687 2010] [ 4176] rotating finished
+[Fri Aug  6 15:27:35.734 2010] [ 4176] rotating indices (seamless=0)
+[Fri Aug  6 15:27:48.671 2010] [ 4176] rotating index 'delta': success
+[Fri Aug  6 15:27:48.671 2010] [ 4176] rotating finished
+[Fri Aug  6 15:27:48.718 2010] [ 4176] rotating indices (seamless=0)
+[Fri Aug  6 15:27:48.812 2010] [ 4176] rotating index 'main': success
+[Fri Aug  6 15:27:48.812 2010] [ 4176] rotating finished
+[Fri Aug  6 15:27:48.859 2010] [ 4176] rotating indices (seamless=0)
+[Fri Aug  6 15:27:56.671 2010] [ 4176] rotating index 'delta': success
+[Fri Aug  6 15:27:56.671 2010] [ 4176] rotating finished
+[Fri Aug  6 15:27:56.718 2010] [ 4176] rotating indices (seamless=0)
+[Fri Aug  6 15:27:56.796 2010] [ 4176] rotating index 'main': success
+[Fri Aug  6 15:27:56.796 2010] [ 4176] rotating finished
+[Fri Aug  6 15:27:56.859 2010] [ 4176] rotating indices (seamless=0)
+[Fri Aug  6 15:28:49.968 2010] [ 4176] shutdown complete
+[Fri Aug  6 15:29:19.156 2010] [ 1108] accepting connections
+[Fri Aug  6 15:29:37.781 2010] [ 1108] rotating index 'delta': success
+[Fri Aug  6 15:29:37.781 2010] [ 1108] rotating finished
+[Fri Aug  6 15:29:37.843 2010] [ 1108] rotating indices (seamless=0)
+[Fri Aug  6 15:29:37.921 2010] [ 1108] rotating index 'main': success
+[Fri Aug  6 15:29:37.921 2010] [ 1108] rotating finished
+[Fri Aug  6 15:29:37.968 2010] [ 1108] rotating indices (seamless=0)
+[Fri Aug  6 15:29:55.234 2010] [ 1108] rotating index 'delta': success
+[Fri Aug  6 15:29:55.234 2010] [ 1108] rotating finished
+[Fri Aug  6 15:29:55.281 2010] [ 1108] rotating indices (seamless=0)
+[Fri Aug  6 15:29:55.328 2010] [ 1108] rotating index 'main': success
+[Fri Aug  6 15:29:55.328 2010] [ 1108] rotating finished
+[Fri Aug  6 15:29:55.375 2010] [ 1108] rotating indices (seamless=0)
+[Fri Aug  6 15:32:37.218 2010] [ 1108] shutdown complete
+[Fri Aug  6 15:32:48.062 2010] [ 4412] accepting connections
+[Fri Aug  6 15:33:02.375 2010] [ 4412] rotating index 'delta': success
+[Fri Aug  6 15:33:02.375 2010] [ 4412] rotating finished
+[Fri Aug  6 15:33:02.421 2010] [ 4412] rotating indices (seamless=0)
+[Fri Aug  6 15:33:02.515 2010] [ 4412] rotating index 'main': success
+[Fri Aug  6 15:33:02.515 2010] [ 4412] rotating finished
+[Fri Aug  6 15:33:02.562 2010] [ 4412] rotating indices (seamless=0)
+[Fri Aug  6 15:36:00.546 2010] [ 4412] shutdown complete
+[Fri Aug  6 15:36:06.031 2010] [ 5148] accepting connections
+[Fri Aug  6 15:36:21.828 2010] [ 5148] rotating index 'delta': success
+[Fri Aug  6 15:36:21.828 2010] [ 5148] rotating finished
+[Fri Aug  6 15:36:21.875 2010] [ 5148] rotating indices (seamless=0)
+[Fri Aug  6 15:36:21.953 2010] [ 5148] rotating index 'main': success
+[Fri Aug  6 15:36:21.953 2010] [ 5148] rotating finished
+[Fri Aug  6 15:36:22.000 2010] [ 5148] rotating indices (seamless=0)
+[Fri Aug  6 15:36:28.406 2010] [ 5148] shutdown complete
+[Fri Aug  6 15:36:42.218 2010] [ 3796] accepting connections
+[Fri Aug  6 15:37:59.609 2010] [ 3796] shutdown complete
+[Fri Aug  6 15:38:05.765 2010] [ 3848] accepting connections
+[Fri Aug  6 15:38:16.421 2010] [ 3848] rotating index 'delta': success
+[Fri Aug  6 15:38:16.421 2010] [ 3848] rotating finished
+[Fri Aug  6 15:38:16.468 2010] [ 3848] rotating indices (seamless=0)
+[Fri Aug  6 15:38:16.515 2010] [ 3848] rotating index 'main': success
+[Fri Aug  6 15:38:16.515 2010] [ 3848] rotating finished
+[Fri Aug  6 15:38:16.562 2010] [ 3848] rotating indices (seamless=0)
+[Fri Aug  6 15:38:23.203 2010] [ 3848] rotating index 'delta': success
+[Fri Aug  6 15:38:23.203 2010] [ 3848] rotating finished
+[Fri Aug  6 15:38:23.250 2010] [ 3848] rotating indices (seamless=0)
+[Fri Aug  6 15:38:23.343 2010] [ 3848] rotating index 'main': success
+[Fri Aug  6 15:38:23.343 2010] [ 3848] rotating finished
+[Fri Aug  6 15:38:23.390 2010] [ 3848] rotating indices (seamless=0)
+[Fri Aug  6 15:39:59.250 2010] [ 3848] rotating index 'delta': success
+[Fri Aug  6 15:39:59.250 2010] [ 3848] rotating finished
+[Fri Aug  6 15:39:59.312 2010] [ 3848] rotating indices (seamless=0)
+[Fri Aug  6 15:39:59.390 2010] [ 3848] rotating index 'main': success
+[Fri Aug  6 15:39:59.390 2010] [ 3848] rotating finished
+[Fri Aug  6 15:39:59.437 2010] [ 3848] rotating indices (seamless=0)
+[Fri Aug  6 15:40:13.890 2010] [ 3848] rotating index 'main': success
+[Fri Aug  6 15:40:13.906 2010] [ 3848] rotating finished
+[Fri Aug  6 15:40:13.953 2010] [ 3848] rotating indices (seamless=0)
+[Fri Aug  6 15:40:25.218 2010] [ 3848] rotating index 'delta': success
+[Fri Aug  6 15:40:25.218 2010] [ 3848] rotating finished
+[Fri Aug  6 15:40:25.265 2010] [ 3848] rotating indices (seamless=0)
+[Fri Aug  6 15:40:25.343 2010] [ 3848] rotating index 'main': success
+[Fri Aug  6 15:40:25.343 2010] [ 3848] rotating finished
+[Fri Aug  6 15:40:25.406 2010] [ 3848] rotating indices (seamless=0)
+[Fri Aug  6 15:41:03.625 2010] [ 3848] rotating index 'delta': success
+[Fri Aug  6 15:41:03.625 2010] [ 3848] rotating finished
+[Fri Aug  6 15:41:03.687 2010] [ 3848] rotating indices (seamless=0)
+[Fri Aug  6 15:41:03.765 2010] [ 3848] rotating index 'main': success
+[Fri Aug  6 15:41:03.765 2010] [ 3848] rotating finished
+[Fri Aug  6 15:41:03.812 2010] [ 3848] rotating indices (seamless=0)
+[Fri Aug  6 15:41:44.328 2010] [ 3848] rotating index 'delta': success
+[Fri Aug  6 15:41:44.328 2010] [ 3848] rotating finished
+[Fri Aug  6 15:41:44.375 2010] [ 3848] rotating indices (seamless=0)
+[Fri Aug  6 15:41:44.468 2010] [ 3848] rotating index 'main': success
+[Fri Aug  6 15:41:44.468 2010] [ 3848] rotating finished
+[Fri Aug  6 15:41:44.515 2010] [ 3848] rotating indices (seamless=0)
+[Fri Aug  6 15:41:48.359 2010] [ 3848] rotating index 'delta': success
+[Fri Aug  6 15:41:48.359 2010] [ 3848] rotating finished
+[Fri Aug  6 15:41:48.421 2010] [ 3848] rotating indices (seamless=0)
+[Fri Aug  6 15:41:48.500 2010] [ 3848] rotating index 'main': success
+[Fri Aug  6 15:41:48.500 2010] [ 3848] rotating finished
+[Fri Aug  6 15:41:48.546 2010] [ 3848] rotating indices (seamless=0)
+[Fri Aug  6 15:41:51.421 2010] [ 3848] rotating index 'main': success
+[Fri Aug  6 15:41:51.421 2010] [ 3848] rotating finished
+[Fri Aug  6 15:41:51.484 2010] [ 3848] rotating indices (seamless=0)
+[Fri Aug  6 15:43:39.750 2010] [ 3848] shutdown complete
+[Fri Aug  6 15:43:45.359 2010] [ 4612] accepting connections
+[Fri Aug  6 15:43:54.343 2010] [ 4612] rotating index 'delta': success
+[Fri Aug  6 15:43:54.343 2010] [ 4612] rotating finished
+[Fri Aug  6 15:43:54.390 2010] [ 4612] rotating indices (seamless=0)
+[Fri Aug  6 15:43:54.468 2010] [ 4612] rotating index 'main': success
+[Fri Aug  6 15:43:54.468 2010] [ 4612] rotating finished
+[Fri Aug  6 15:43:54.531 2010] [ 4612] rotating indices (seamless=0)
+[Fri Aug  6 15:44:53.171 2010] [ 4612] shutdown complete
+[Fri Aug  6 15:45:00.250 2010] [ 4804] accepting connections
+[Fri Aug  6 15:45:10.093 2010] [ 4804] rotating index 'delta': success
+[Fri Aug  6 15:45:10.093 2010] [ 4804] rotating finished
+[Fri Aug  6 15:45:10.140 2010] [ 4804] rotating indices (seamless=0)
+[Fri Aug  6 15:45:10.234 2010] [ 4804] rotating index 'main': success
+[Fri Aug  6 15:45:10.234 2010] [ 4804] rotating finished
+[Fri Aug  6 15:45:10.281 2010] [ 4804] rotating indices (seamless=0)
+[Fri Aug  6 15:46:32.296 2010] [ 4804] shutdown complete
+[Fri Aug  6 15:47:42.265 2010] [ 1504] accepting connections
+[Fri Aug  6 15:47:49.046 2010] [ 1504] rotating index 'delta': success
+[Fri Aug  6 15:47:49.046 2010] [ 1504] rotating finished
+[Fri Aug  6 15:47:49.109 2010] [ 1504] rotating indices (seamless=0)
+[Fri Aug  6 15:47:49.187 2010] [ 1504] rotating index 'main': success
+[Fri Aug  6 15:47:49.187 2010] [ 1504] rotating finished
+[Fri Aug  6 15:47:49.234 2010] [ 1504] rotating indices (seamless=0)
+[Fri Aug  6 15:48:11.328 2010] [ 1504] rotating index 'delta': success
+[Fri Aug  6 15:48:11.328 2010] [ 1504] rotating finished
+[Fri Aug  6 15:48:11.375 2010] [ 1504] rotating indices (seamless=0)
+[Fri Aug  6 15:48:11.468 2010] [ 1504] rotating index 'main': success
+[Fri Aug  6 15:48:11.468 2010] [ 1504] rotating finished
+[Fri Aug  6 15:48:11.515 2010] [ 1504] rotating indices (seamless=0)
+[Fri Aug  6 15:48:26.843 2010] [ 1504] shutdown complete
+[Fri Aug  6 15:48:36.656 2010] [ 4216] accepting connections
+[Fri Aug  6 15:48:59.656 2010] [ 4216] rotating index 'delta': success
+[Fri Aug  6 15:48:59.656 2010] [ 4216] rotating finished
+[Fri Aug  6 15:48:59.703 2010] [ 4216] rotating indices (seamless=0)
+[Fri Aug  6 15:48:59.781 2010] [ 4216] rotating index 'main': success
+[Fri Aug  6 15:48:59.781 2010] [ 4216] rotating finished
+[Fri Aug  6 15:48:59.828 2010] [ 4216] rotating indices (seamless=0)
+[Fri Aug  6 15:50:37.468 2010] [ 4216] rotating index 'delta': success
+[Fri Aug  6 15:50:37.468 2010] [ 4216] rotating finished
+[Fri Aug  6 15:50:37.531 2010] [ 4216] rotating indices (seamless=0)
+[Fri Aug  6 15:50:37.609 2010] [ 4216] rotating index 'main': success
+[Fri Aug  6 15:50:37.609 2010] [ 4216] rotating finished
+[Fri Aug  6 15:50:37.656 2010] [ 4216] rotating indices (seamless=0)
+[Fri Aug  6 15:50:59.578 2010] [ 4216] rotating index 'delta': success
+[Fri Aug  6 15:50:59.578 2010] [ 4216] rotating finished
+[Fri Aug  6 15:50:59.640 2010] [ 4216] rotating indices (seamless=0)
+[Fri Aug  6 15:50:59.671 2010] [ 4216] rotating index 'main': success
+[Fri Aug  6 15:50:59.671 2010] [ 4216] rotating finished
+[Fri Aug  6 15:50:59.718 2010] [ 4216] rotating indices (seamless=0)
+[Fri Aug  6 15:51:27.265 2010] [ 4216] rotating index 'delta': success
+[Fri Aug  6 15:51:27.265 2010] [ 4216] rotating finished
+[Fri Aug  6 15:51:27.328 2010] [ 4216] rotating indices (seamless=0)
+[Fri Aug  6 15:51:27.406 2010] [ 4216] rotating index 'main': success
+[Fri Aug  6 15:51:27.406 2010] [ 4216] rotating finished
+[Fri Aug  6 15:51:27.453 2010] [ 4216] rotating indices (seamless=0)
+[Fri Aug  6 15:52:02.796 2010] [ 4216] rotating index 'delta': success
+[Fri Aug  6 15:52:02.796 2010] [ 4216] rotating finished
+[Fri Aug  6 15:52:02.843 2010] [ 4216] rotating indices (seamless=0)
+[Fri Aug  6 15:52:02.921 2010] [ 4216] rotating index 'main': success
+[Fri Aug  6 15:52:02.937 2010] [ 4216] rotating finished
+[Fri Aug  6 15:52:02.984 2010] [ 4216] rotating indices (seamless=0)
+[Fri Aug  6 15:52:07.796 2010] [ 4216] rotating index 'delta': success
+[Fri Aug  6 15:52:07.796 2010] [ 4216] rotating finished
+[Fri Aug  6 15:52:07.843 2010] [ 4216] rotating indices (seamless=0)
+[Fri Aug  6 15:52:07.937 2010] [ 4216] rotating index 'main': success
+[Fri Aug  6 15:52:07.937 2010] [ 4216] rotating finished
+[Fri Aug  6 15:52:07.984 2010] [ 4216] rotating indices (seamless=0)
+[Fri Aug  6 16:12:57.031 2010] [ 4216] rotating index 'delta': success
+[Fri Aug  6 16:12:57.031 2010] [ 4216] rotating finished
+[Fri Aug  6 16:12:57.093 2010] [ 4216] rotating indices (seamless=0)
+[Fri Aug  6 16:12:57.125 2010] [ 4216] rotating index 'main': success
+[Fri Aug  6 16:12:57.125 2010] [ 4216] rotating finished
+[Fri Aug  6 16:12:57.171 2010] [ 4216] rotating indices (seamless=0)
+[Fri Aug  6 16:13:12.703 2010] [ 4216] rotating index 'delta': success
+[Fri Aug  6 16:13:12.703 2010] [ 4216] rotating finished
+[Fri Aug  6 16:13:12.765 2010] [ 4216] rotating indices (seamless=0)
+[Fri Aug  6 16:13:12.796 2010] [ 4216] rotating index 'main': success
+[Fri Aug  6 16:13:12.796 2010] [ 4216] rotating finished
+[Fri Aug  6 16:13:12.843 2010] [ 4216] rotating indices (seamless=0)
+[Fri Aug  6 16:13:54.281 2010] [ 4216] rotating index 'delta': success
+[Fri Aug  6 16:13:54.281 2010] [ 4216] rotating finished
+[Fri Aug  6 16:13:54.328 2010] [ 4216] rotating indices (seamless=0)
+[Fri Aug  6 16:13:54.375 2010] [ 4216] rotating index 'main': success
+[Fri Aug  6 16:13:54.375 2010] [ 4216] rotating finished
+[Fri Aug  6 16:13:54.421 2010] [ 4216] rotating indices (seamless=0)
+[Fri Aug  6 16:19:06.843 2010] [ 4216] rotating index 'delta': success
+[Fri Aug  6 16:19:06.843 2010] [ 4216] rotating finished
+[Fri Aug  6 16:19:06.890 2010] [ 4216] rotating indices (seamless=0)
+[Fri Aug  6 16:19:06.984 2010] [ 4216] rotating index 'main': success
+[Fri Aug  6 16:19:06.984 2010] [ 4216] rotating finished
+[Fri Aug  6 16:19:07.031 2010] [ 4216] rotating indices (seamless=0)
+[Fri Aug  6 16:19:19.265 2010] [ 4216] rotating index 'delta': success
+[Fri Aug  6 16:19:19.265 2010] [ 4216] rotating finished
+[Fri Aug  6 16:19:19.312 2010] [ 4216] rotating indices (seamless=0)
+[Fri Aug  6 16:19:19.390 2010] [ 4216] rotating index 'main': success
+[Fri Aug  6 16:19:19.390 2010] [ 4216] rotating finished
+[Fri Aug  6 16:19:19.437 2010] [ 4216] rotating indices (seamless=0)
+[Fri Aug  6 16:19:45.234 2010] [ 4216] rotating index 'delta': success
+[Fri Aug  6 16:19:45.234 2010] [ 4216] rotating finished
+[Fri Aug  6 16:19:45.281 2010] [ 4216] rotating indices (seamless=0)
+[Fri Aug  6 16:19:45.312 2010] [ 4216] rotating index 'main': success
+[Fri Aug  6 16:19:45.312 2010] [ 4216] rotating finished
+[Fri Aug  6 16:19:45.359 2010] [ 4216] rotating indices (seamless=0)
+[Fri Aug  6 16:19:59.937 2010] [ 4216] rotating index 'delta': success
+[Fri Aug  6 16:19:59.937 2010] [ 4216] rotating finished
+[Fri Aug  6 16:19:59.984 2010] [ 4216] rotating indices (seamless=0)
+[Fri Aug  6 16:20:00.015 2010] [ 4216] rotating index 'main': success
+[Fri Aug  6 16:20:00.015 2010] [ 4216] rotating finished
+[Fri Aug  6 16:20:00.062 2010] [ 4216] rotating indices (seamless=0)
+[Fri Aug  6 16:20:03.875 2010] [ 4216] rotating index 'delta': success
+[Fri Aug  6 16:20:03.875 2010] [ 4216] rotating finished
+[Fri Aug  6 16:20:03.921 2010] [ 4216] rotating indices (seamless=0)
+[Fri Aug  6 16:20:04.015 2010] [ 4216] rotating index 'main': success
+[Fri Aug  6 16:20:04.015 2010] [ 4216] rotating finished
+[Fri Aug  6 16:20:04.062 2010] [ 4216] rotating indices (seamless=0)
+[Fri Aug  6 16:20:12.125 2010] [ 4216] rotating index 'delta': success
+[Fri Aug  6 16:20:12.125 2010] [ 4216] rotating finished
+[Fri Aug  6 16:20:12.187 2010] [ 4216] rotating indices (seamless=0)
+[Fri Aug  6 16:20:12.265 2010] [ 4216] rotating index 'main': success
+[Fri Aug  6 16:20:12.265 2010] [ 4216] rotating finished
+[Fri Aug  6 16:20:12.312 2010] [ 4216] rotating indices (seamless=0)
+[Fri Aug  6 16:21:58.187 2010] [ 4216] shutdown complete
+[Fri Aug  6 16:22:11.062 2010] [ 4428] accepting connections
+[Fri Aug  6 16:22:17.968 2010] [ 4428] rotating index 'delta': success
+[Fri Aug  6 16:22:17.968 2010] [ 4428] rotating finished
+[Fri Aug  6 16:22:18.015 2010] [ 4428] rotating indices (seamless=0)
+[Fri Aug  6 16:22:18.093 2010] [ 4428] rotating index 'main': success
+[Fri Aug  6 16:22:18.093 2010] [ 4428] rotating finished
+[Fri Aug  6 16:22:18.156 2010] [ 4428] rotating indices (seamless=0)
+[Fri Aug  6 16:22:25.046 2010] [ 4428] rotating index 'delta': success
+[Fri Aug  6 16:22:25.046 2010] [ 4428] rotating finished
+[Fri Aug  6 16:22:25.093 2010] [ 4428] rotating indices (seamless=0)
+[Fri Aug  6 16:22:25.125 2010] [ 4428] rotating index 'main': success
+[Fri Aug  6 16:22:25.125 2010] [ 4428] rotating finished
+[Fri Aug  6 16:22:25.187 2010] [ 4428] rotating indices (seamless=0)
+[Fri Aug  6 16:22:33.500 2010] [ 4428] rotating index 'delta': success
+[Fri Aug  6 16:22:33.500 2010] [ 4428] rotating finished
+[Fri Aug  6 16:22:33.562 2010] [ 4428] rotating indices (seamless=0)
+[Fri Aug  6 16:22:33.640 2010] [ 4428] rotating index 'main': success
+[Fri Aug  6 16:22:33.640 2010] [ 4428] rotating finished
+[Fri Aug  6 16:22:33.687 2010] [ 4428] rotating indices (seamless=0)
+[Fri Aug  6 16:22:45.671 2010] [ 4428] rotating index 'delta': success
+[Fri Aug  6 16:22:45.671 2010] [ 4428] rotating finished
+[Fri Aug  6 16:22:45.718 2010] [ 4428] rotating indices (seamless=0)
+[Fri Aug  6 16:22:45.812 2010] [ 4428] rotating index 'main': success
+[Fri Aug  6 16:22:45.812 2010] [ 4428] rotating finished
+[Fri Aug  6 16:22:45.859 2010] [ 4428] rotating indices (seamless=0)
+[Fri Aug  6 16:23:42.328 2010] [ 4428] shutdown complete
+[Fri Aug  6 16:23:50.250 2010] [ 3648] accepting connections
+[Fri Aug  6 16:24:13.500 2010] [ 3648] rotating index 'delta': success
+[Fri Aug  6 16:24:13.500 2010] [ 3648] rotating finished
+[Fri Aug  6 16:24:13.546 2010] [ 3648] rotating indices (seamless=0)
+[Fri Aug  6 16:24:13.640 2010] [ 3648] rotating index 'main': success
+[Fri Aug  6 16:24:13.640 2010] [ 3648] rotating finished
+[Fri Aug  6 16:24:13.687 2010] [ 3648] rotating indices (seamless=0)
+[Fri Aug  6 16:24:16.375 2010] [ 3648] rotating index 'delta': success
+[Fri Aug  6 16:24:16.375 2010] [ 3648] rotating finished
+[Fri Aug  6 16:24:16.421 2010] [ 3648] rotating indices (seamless=0)
+[Fri Aug  6 16:24:16.515 2010] [ 3648] rotating index 'main': success
+[Fri Aug  6 16:24:16.515 2010] [ 3648] rotating finished
+[Fri Aug  6 16:24:16.562 2010] [ 3648] rotating indices (seamless=0)
+[Fri Aug  6 16:24:17.671 2010] [ 3648] rotating index 'delta': success
+[Fri Aug  6 16:24:17.671 2010] [ 3648] rotating finished
+[Fri Aug  6 16:24:17.718 2010] [ 3648] rotating indices (seamless=0)
+[Fri Aug  6 16:24:17.796 2010] [ 3648] rotating index 'main': success
+[Fri Aug  6 16:24:17.796 2010] [ 3648] rotating finished
+[Fri Aug  6 16:24:17.859 2010] [ 3648] rotating indices (seamless=0)
+[Fri Aug  6 16:24:21.390 2010] [ 3648] rotating index 'main': success
+[Fri Aug  6 16:24:21.390 2010] [ 3648] rotating finished
+[Fri Aug  6 16:24:21.437 2010] [ 3648] rotating indices (seamless=0)
+[Fri Aug  6 16:24:36.421 2010] [ 3648] rotating index 'delta': success
+[Fri Aug  6 16:24:36.421 2010] [ 3648] rotating finished
+[Fri Aug  6 16:24:36.484 2010] [ 3648] rotating indices (seamless=0)
+[Fri Aug  6 16:24:36.515 2010] [ 3648] rotating index 'main': success
+[Fri Aug  6 16:24:36.515 2010] [ 3648] rotating finished
+[Fri Aug  6 16:24:36.562 2010] [ 3648] rotating indices (seamless=0)
+[Fri Aug  6 16:24:50.359 2010] [ 3648] rotating index 'delta': success
+[Fri Aug  6 16:24:50.359 2010] [ 3648] rotating finished
+[Fri Aug  6 16:24:50.421 2010] [ 3648] rotating indices (seamless=0)
+[Fri Aug  6 16:24:50.453 2010] [ 3648] rotating index 'main': success
+[Fri Aug  6 16:24:50.453 2010] [ 3648] rotating finished
+[Fri Aug  6 16:24:50.500 2010] [ 3648] rotating indices (seamless=0)
+[Fri Aug  6 16:26:44.000 2010] [ 3648] shutdown complete
+[Fri Aug  6 16:26:50.343 2010] [ 4596] accepting connections
+[Fri Aug  6 16:28:06.062 2010] [ 4596] rotating index 'delta': success
+[Fri Aug  6 16:28:06.062 2010] [ 4596] rotating finished
+[Fri Aug  6 16:28:06.109 2010] [ 4596] rotating indices (seamless=0)
+[Fri Aug  6 16:28:06.203 2010] [ 4596] rotating index 'main': success
+[Fri Aug  6 16:28:06.203 2010] [ 4596] rotating finished
+[Fri Aug  6 16:28:06.250 2010] [ 4596] rotating indices (seamless=0)
+[Fri Aug  6 17:01:25.921 2010] [ 4596] rotating index 'main': success
+[Fri Aug  6 17:01:25.921 2010] [ 4596] rotating finished
+[Fri Aug  6 17:01:25.968 2010] [ 4596] rotating indices (seamless=0)
+[Fri Aug  6 17:04:21.687 2010] [ 4596] rotating index 'main': success
+[Fri Aug  6 17:04:21.687 2010] [ 4596] rotating finished
+[Fri Aug  6 17:04:21.734 2010] [ 4596] rotating indices (seamless=0)
+[Fri Aug  6 17:04:28.109 2010] [ 4596] rotating index 'main': success
+[Fri Aug  6 17:04:28.109 2010] [ 4596] rotating finished
+[Fri Aug  6 17:04:28.171 2010] [ 4596] rotating indices (seamless=0)
+[Fri Aug  6 17:04:49.093 2010] [ 4596] shutdown complete
+[Fri Aug  6 17:06:27.890 2010] [ 4476] accepting connections
+[Fri Aug  6 17:06:32.953 2010] [ 4476] rotating index 'main': success
+[Fri Aug  6 17:06:32.953 2010] [ 4476] rotating finished
+[Fri Aug  6 17:06:33.000 2010] [ 4476] rotating indices (seamless=0)
+[Fri Aug  6 17:06:39.937 2010] [ 4476] rotating index 'main': success
+[Fri Aug  6 17:06:39.937 2010] [ 4476] rotating finished
+[Fri Aug  6 17:06:39.984 2010] [ 4476] rotating indices (seamless=0)
+[Fri Aug  6 17:07:45.640 2010] [ 4476] rotating index 'main': success
+[Fri Aug  6 17:07:45.640 2010] [ 4476] rotating finished
+[Fri Aug  6 17:07:45.687 2010] [ 4476] rotating indices (seamless=0)
+[Fri Aug  6 17:09:14.812 2010] [ 4476] shutdown complete
+[Fri Aug  6 17:09:30.265 2010] [ 3420] accepting connections
+[Fri Aug  6 17:09:36.000 2010] [ 3420] rotating index 'main': success
+[Fri Aug  6 17:09:36.000 2010] [ 3420] rotating finished
+[Fri Aug  6 17:09:36.046 2010] [ 3420] rotating indices (seamless=0)
+[Fri Aug  6 17:09:42.578 2010] [ 3420] rotating index 'main': success
+[Fri Aug  6 17:09:42.578 2010] [ 3420] rotating finished
+[Fri Aug  6 17:09:42.625 2010] [ 3420] rotating indices (seamless=0)
+[Fri Aug  6 17:11:49.078 2010] [ 3420] shutdown complete
+[Fri Aug  6 17:11:55.375 2010] [ 1344] accepting connections
+[Fri Aug  6 17:12:00.296 2010] [ 1344] rotating index 'main': success
+[Fri Aug  6 17:12:00.296 2010] [ 1344] rotating finished
+[Fri Aug  6 17:12:00.343 2010] [ 1344] rotating indices (seamless=0)
+[Fri Aug  6 17:12:23.390 2010] [ 1344] shutdown complete
+[Fri Aug  6 17:12:30.093 2010] [ 4892] accepting connections
+[Fri Aug  6 17:12:41.312 2010] [ 4892] rotating index 'delta': success
+[Fri Aug  6 17:12:41.312 2010] [ 4892] rotating finished
+[Fri Aug  6 17:12:41.359 2010] [ 4892] rotating indices (seamless=0)
+[Fri Aug  6 17:12:41.390 2010] [ 4892] rotating index 'main': success
+[Fri Aug  6 17:12:41.390 2010] [ 4892] rotating finished
+[Fri Aug  6 17:12:41.453 2010] [ 4892] rotating indices (seamless=0)
+[Fri Aug  6 17:18:27.093 2010] [ 4892] rotating index 'delta': success
+[Fri Aug  6 17:18:27.093 2010] [ 4892] rotating finished
+[Fri Aug  6 17:18:27.156 2010] [ 4892] rotating indices (seamless=0)
+[Fri Aug  6 17:18:27.234 2010] [ 4892] rotating index 'main': success
+[Fri Aug  6 17:18:27.234 2010] [ 4892] rotating finished
+[Fri Aug  6 17:18:27.281 2010] [ 4892] rotating indices (seamless=0)
+[Fri Aug  6 17:21:38.984 2010] [ 4892] rotating index 'delta': success
+[Fri Aug  6 17:21:38.984 2010] [ 4892] rotating finished
+[Fri Aug  6 17:21:39.031 2010] [ 4892] rotating indices (seamless=0)
+[Fri Aug  6 17:21:39.109 2010] [ 4892] rotating index 'main': success
+[Fri Aug  6 17:21:39.109 2010] [ 4892] rotating finished
+[Fri Aug  6 17:21:39.171 2010] [ 4892] rotating indices (seamless=0)
+[Fri Aug  6 17:25:06.515 2010] [ 4892] rotating index 'delta': success
+[Fri Aug  6 17:25:06.515 2010] [ 4892] rotating finished
+[Fri Aug  6 17:25:06.562 2010] [ 4892] rotating indices (seamless=0)
+[Fri Aug  6 17:25:06.671 2010] [ 4892] rotating index 'main': success
+[Fri Aug  6 17:25:06.671 2010] [ 4892] rotating finished
+[Fri Aug  6 17:25:06.718 2010] [ 4892] rotating indices (seamless=0)
+[Fri Aug  6 17:26:11.093 2010] [ 4892] rotating index 'delta': success
+[Fri Aug  6 17:26:11.093 2010] [ 4892] rotating finished
+[Fri Aug  6 17:26:11.140 2010] [ 4892] rotating indices (seamless=0)
+[Fri Aug  6 17:26:11.187 2010] [ 4892] rotating index 'main': success
+[Fri Aug  6 17:26:11.187 2010] [ 4892] rotating finished
+[Fri Aug  6 17:26:11.234 2010] [ 4892] rotating indices (seamless=0)
+[Fri Aug  6 17:26:51.265 2010] [ 4892] rotating index 'delta': success
+[Fri Aug  6 17:26:51.265 2010] [ 4892] rotating finished
+[Fri Aug  6 17:26:51.312 2010] [ 4892] rotating indices (seamless=0)
+[Fri Aug  6 17:26:51.406 2010] [ 4892] rotating index 'main': success
+[Fri Aug  6 17:26:51.406 2010] [ 4892] rotating finished
+[Fri Aug  6 17:26:51.453 2010] [ 4892] rotating indices (seamless=0)
+[Fri Aug  6 17:26:54.343 2010] [ 4892] rotating index 'main': success
+[Fri Aug  6 17:26:54.343 2010] [ 4892] rotating finished
+[Fri Aug  6 17:26:54.390 2010] [ 4892] rotating indices (seamless=0)
+[Fri Aug  6 17:27:50.109 2010] [ 4892] shutdown complete
+[Sat Aug  7 16:32:34.812 2010] [ 1964] accepting connections
+[Sat Aug  7 16:34:10.953 2010] [ 1964] rotating index 'delta': success
+[Sat Aug  7 16:34:10.953 2010] [ 1964] rotating finished
+[Sat Aug  7 16:34:11.000 2010] [ 1964] rotating indices (seamless=0)
+[Sat Aug  7 16:34:11.203 2010] [ 1964] rotating index 'main': success
+[Sat Aug  7 16:34:11.203 2010] [ 1964] rotating finished
+[Sat Aug  7 16:34:11.265 2010] [ 1964] rotating indices (seamless=0)
+[Mon Aug  9 08:52:18.015 2010] [  648] accepting connections
+[Mon Aug  9 10:03:01.046 2010] [  648] shutdown complete
+[Tue Aug 10 11:08:29.187 2010] [ 4352] accepting connections
+[Tue Aug 10 11:28:31.921 2010] [ 1356] accepting connections
+[Tue Aug 10 11:45:40.031 2010] [  920] accepting connections
+[Tue Aug 10 13:40:39.671 2010] [ 1980] accepting connections
+[Tue Aug 10 17:19:16.906 2010] [  112] accepting connections
+[Wed Aug 11 08:53:45.093 2010] [ 1932] accepting connections
+[Thu Aug 12 08:55:21.171 2010] [ 1040] accepting connections
+[Thu Aug 12 16:42:19.437 2010] [ 1040] rotating index 'delta': success
+[Thu Aug 12 16:42:19.437 2010] [ 1040] rotating finished
+[Thu Aug 12 16:42:19.484 2010] [ 1040] rotating indices (seamless=0)
+[Thu Aug 12 16:42:19.625 2010] [ 1040] rotating index 'main': success
+[Thu Aug 12 16:42:19.625 2010] [ 1040] rotating finished
+[Thu Aug 12 16:42:19.671 2010] [ 1040] rotating indices (seamless=0)
+[Thu Aug 12 16:42:27.234 2010] [ 1040] rotating index 'main': success
+[Thu Aug 12 16:42:27.234 2010] [ 1040] rotating finished
+[Thu Aug 12 16:42:27.281 2010] [ 1040] rotating indices (seamless=0)
+[Thu Aug 12 16:43:03.437 2010] [ 1040] rotating index 'delta': success
+[Thu Aug 12 16:43:03.437 2010] [ 1040] rotating finished
+[Thu Aug 12 16:43:03.500 2010] [ 1040] rotating indices (seamless=0)
+[Thu Aug 12 16:43:03.578 2010] [ 1040] rotating index 'main': success
+[Thu Aug 12 16:43:03.578 2010] [ 1040] rotating finished
+[Thu Aug 12 16:43:03.625 2010] [ 1040] rotating indices (seamless=0)
+[Fri Aug 13 08:44:31.515 2010] [  996] accepting connections
+[Mon Aug 16 07:59:40.156 2010] [ 1852] accepting connections
+[Mon Aug 16 13:55:27.546 2010] [  476] accepting connections
+[Tue Aug 17 08:37:33.250 2010] [  804] accepting connections
+[Tue Aug 17 13:39:50.359 2010] [  804] shutdown complete
+[Fri Jan 18 11:30:42.304 2013] [ 1876] accepting connections
+[Fri Jan 18 17:56:58.333 2013] [ 2524] accepting connections

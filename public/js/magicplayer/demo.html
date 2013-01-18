@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!--修改 JS 文件绝对或相对页面的地址-->
+        <script type="text/javascript" src="system/swfobject.js"></script>
+        <script type="text/javascript">
+            //修改 MagicPlayer 播放器的绝对或相对页面的路径及参数、播放器容器 ID、播放器尺寸
+            swfobject.embedSWF("http://www.magicplayer.net.cn/demo/v20/magicplayer.swf?file="+
+                    "http://192.168.1.13/test.flv"+
+                    "&autoplay=0&autoloop=0&autorand=0&autoscale=1&minimode=0&volume=70&logo="+
+                    "&site=&logolinkcolor=0xff9900&buffertime=1.5&",
+                "magicplayer","400","340","9.0.0","system/expressInstall.swf",
+                false,{allowScriptAccess:"always",quality:"high",scale:"noscale",play:"false",
+                    bgcolor:"#000000",//播放器的背景颜色
+                    allowFullScreen:"true",//播放器的全屏播放
+                    wmode:"transparent"}//播放器的透明显示,敬请注意：全屏时右键菜单会移位于鼠标右下方显示！
+            );
+        </script>
+    </head>
+    <body>
+        <!--修改播放器容器 ID-->
+        <div id="magicplayer">
+            <h1>Alternative content</h1>
+            <p><a href="http://www.adobe.com/go/getflashplayer">
+                    <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a>
+            </p>
+        </div>
+    </body>
+</html>

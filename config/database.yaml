@@ -1,0 +1,26 @@
+# <?php die(); //$Id: database.yaml 901 2010-07-22 05:49:33Z thinkgem $ ?>
+
+## 注意：书写时，缩进不能使用 Tab，必须使用空格
+
+#############################
+# 数据库设置
+#############################
+
+# devel 模式
+devel:
+  driver:     mysql
+  host:       localhost:3306
+  login:      root
+  password:   
+  database:   openwan_db
+  charset:    utf8
+  prefix:     ow_
+
+# test 模式
+test:
+  _use: devel
+
+# deploy 模式
+deploy:
+  _use: devel
+

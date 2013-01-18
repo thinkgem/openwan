@@ -1,0 +1,12 @@
+行为插件是 QeePHP 为 ActiveRecord
+提供的扩展机制，允许开发者透明的改变模型工作方式。
+
+QeePHP 自带的行为插件包括：
+
+-  快速生成仿 UUID 
+-  对象关系助手
+-  对象属性唯一性检查
+-  用户角色绑定
+
+更多的行为插件可以在 "QeePHP.com 开源项目与插件平台":http://qeephp.com/projects 上获得。
+

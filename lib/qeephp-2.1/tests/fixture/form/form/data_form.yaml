@@ -1,0 +1,16 @@
+
+name:
+  _ui: textbox
+  _filters: ["trim", "strtolower", ["substr", 0, 5]] 
+  _validations:
+    - ["is_alpha", "name 只能是字母"]
+    - ["min_length", 2, "name 至少要 2 个字符"]
+
+price:
+  _ui: textbox
+  _filters: "floatval"
+  _validations:
+    - ["greater_than", 0.1, "price 必须大于 0.1"]
+    - ["Form_Data::nullValidate", "空验证操作"]
+    - ["is_float", "price 必须是一个浮点数"]
+

@@ -1,0 +1,108 @@
+.mzmultipageleft
+{
+}
+
+.mzmultipageleft
+.mmplheader
+{
+    width: 23px;
+}
+
+.mzmultipageleft
+.mmplcontent
+{
+    background-color: white;
+    border: 1px solid #52636A;
+    border-left: none;
+}
+
+.mzmultipageleft
+.mmplheader
+.mmplnode
+{
+    width: 23px;
+    border-right: 1px solid #52636A;
+}
+
+.mzmultipageleft
+.mmplheader
+.mmplnodebody
+.mmplnodebodycontent
+{
+    width: 16px;
+    color: #000000;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 2px 1px 3px;
+    text-align: center;
+    margin-right: 1px;
+}
+.mzmultipageleft
+.mmplheader
+.mmplnodebody img
+{
+    margin-bottom: 3px;
+}
+
+.mzmultipageleft
+.mmplheader
+.mmplnode
+.mmplnodehead
+{
+    height: 1px;
+    font-size: 1px;
+}
+.mzmultipageleft
+.mmplheader
+.mmplnode
+.mmplnodebody
+{
+}
+.mzmultipageleft
+.mmplheader
+.mmplnode
+.mmplnodefoot
+{
+    height: 1px;
+    font-size: 1px;
+}
+
+
+.mzmultipageleft
+.mmplheader
+.mmplnodeselected
+.mmplnodehead
+{
+    width: 23px;
+    height: 10px;
+    font-size: 1px;
+    background: transparent url(mplhead.gif) no-repeat;
+}
+.mzmultipageleft
+.mmplheader
+.mmplnodeselected
+.mmplnodebody
+{
+    width: 23px;
+    font-size: 10px;
+    background-image: url(mplbody.gif);
+}
+.mzmultipageleft
+.mmplheader
+.mmplnodeselected
+.mmplnodebody
+.mmplnodebodycontent
+{
+    color: white;
+}
+
+.mzmultipageleft
+.mmplheader
+.mmplnodeselected
+.mmplnodefoot
+{
+    width: 23px;
+    height: 35px;
+    font-size: 10px;
+    background: transparent url(mplfoot.gif) no-repeat;
+}

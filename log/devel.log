@@ -1,0 +1,548 @@
+2013-01-18T20:58:53+08:00 DEBUG: --- STARTUP TIME --- 1358513933.1459
+2013-01-18T20:58:53+08:00 DEBUG: MyApp::_initConfig
+2013-01-18T20:58:53+08:00 DEBUG: session_start()
+2013-01-18T20:58:53+08:00 DEBUG: session_id: qvpo4a4omc2k53fbtvecar6i01
+2013-01-18T20:58:53+08:00 DEBUG: REQUEST UDI: default::default/index@default
+2013-01-18T20:58:53+08:00 DEBUG: EXECUTE ACTION: Controller_Default::actionindex()
+2013-01-18T20:58:53+08:00 DEBUG: --- SHUTDOWN TIME --- 1358513933.2622 (0.11633706092834)sec
+2013-01-18T20:58:53+08:00 DEBUG: --- STARTUP TIME --- 1358513933.2679
+2013-01-18T20:58:53+08:00 DEBUG: MyApp::_initConfig
+2013-01-18T20:58:53+08:00 DEBUG: session_start()
+2013-01-18T20:58:53+08:00 DEBUG: session_id: qvpo4a4omc2k53fbtvecar6i01
+2013-01-18T20:58:53+08:00 DEBUG: REQUEST UDI: admin::default/index@default
+2013-01-18T20:58:53+08:00 DEBUG: EXECUTE ACTION: Controller_Admin_Default::actionindex()
+2013-01-18T20:58:53+08:00 DEBUG: --- SHUTDOWN TIME --- 1358513933.2843 (0.016388893127441)sec
+2013-01-18T20:58:53+08:00 DEBUG: --- STARTUP TIME --- 1358513933.2899
+2013-01-18T20:58:53+08:00 DEBUG: MyApp::_initConfig
+2013-01-18T20:58:53+08:00 DEBUG: session_start()
+2013-01-18T20:58:53+08:00 DEBUG: session_id: qvpo4a4omc2k53fbtvecar6i01
+2013-01-18T20:58:53+08:00 DEBUG: REQUEST UDI: admin::default/login@default
+2013-01-18T20:58:53+08:00 DEBUG: EXECUTE ACTION: Controller_Admin_Default::actionlogin()
+2013-01-18T20:58:53+08:00 DEBUG: --- SHUTDOWN TIME --- 1358513933.3081 (0.018203973770142)sec
+2013-01-18T20:58:56+08:00 DEBUG: --- STARTUP TIME --- 1358513936.7319
+2013-01-18T20:58:56+08:00 DEBUG: MyApp::_initConfig
+2013-01-18T20:58:56+08:00 DEBUG: session_start()
+2013-01-18T20:58:56+08:00 DEBUG: session_id: qvpo4a4omc2k53fbtvecar6i01
+2013-01-18T20:58:56+08:00 DEBUG: REQUEST UDI: admin::default/login@default
+2013-01-18T20:58:56+08:00 DEBUG: EXECUTE ACTION: Controller_Admin_Default::actionlogin()
+2013-01-18T20:58:56+08:00 DEBUG: [DB EXECUTE] USE `openwan_db`
+2013-01-18T20:58:56+08:00 DEBUG: [DB EXECUTE] SET NAMES 'utf8'
+2013-01-18T20:58:56+08:00 DEBUG: [DB EXECUTE] SHOW FULL COLUMNS FROM `openwan_db`.`ow_users`
+2013-01-18T20:58:56+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(group)
+2013-01-18T20:58:56+08:00 DEBUG: [DB EXECUTE] SHOW FULL COLUMNS FROM `openwan_db`.`ow_groups`
+2013-01-18T20:58:56+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(users)
+2013-01-18T20:58:56+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(roles)
+2013-01-18T20:58:56+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(categorys)
+2013-01-18T20:58:56+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(level)
+2013-01-18T20:58:56+08:00 DEBUG: [DB EXECUTE] SHOW FULL COLUMNS FROM `openwan_db`.`ow_levels`
+2013-01-18T20:58:56+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(users)
+2013-01-18T20:58:56+08:00 DEBUG: [DB EXECUTE] SELECT `ow_users`.*   FROM `openwan_db`.`ow_users`   WHERE ((`ow_users`.`username` = 'admin')) LIMIT 1
+2013-01-18T20:58:56+08:00 DEBUG: [DB EXECUTE] UPDATE `openwan_db`.`ow_users` SET `login_count` = 127, `login_at` = 1358513936 WHERE `openwan_db`.`ow_users`.`id` = '1'
+2013-01-18T20:58:56+08:00 DEBUG: --- SHUTDOWN TIME --- 1358513936.8097 (0.077849864959717)sec
+2013-01-18T20:58:56+08:00 DEBUG: --- STARTUP TIME --- 1358513936.8173
+2013-01-18T20:58:56+08:00 DEBUG: MyApp::_initConfig
+2013-01-18T20:58:56+08:00 DEBUG: session_start()
+2013-01-18T20:58:56+08:00 DEBUG: session_id: qvpo4a4omc2k53fbtvecar6i01
+2013-01-18T20:58:56+08:00 DEBUG: REQUEST UDI: admin::default/index@default
+2013-01-18T20:58:56+08:00 DEBUG: EXECUTE ACTION: Controller_Admin_Default::actionindex()
+2013-01-18T20:58:56+08:00 DEBUG: --- SHUTDOWN TIME --- 1358513936.8471 (0.029788017272949)sec
+2013-01-18T20:58:58+08:00 DEBUG: --- STARTUP TIME --- 1358513938.683
+2013-01-18T20:58:58+08:00 DEBUG: MyApp::_initConfig
+2013-01-18T20:58:58+08:00 DEBUG: session_start()
+2013-01-18T20:58:58+08:00 DEBUG: session_id: qvpo4a4omc2k53fbtvecar6i01
+2013-01-18T20:58:58+08:00 DEBUG: REQUEST UDI: admin::fileupload/index@default
+2013-01-18T20:58:58+08:00 DEBUG: EXECUTE ACTION: Controller_Admin_FileUpload::actionindex()
+2013-01-18T20:58:58+08:00 DEBUG: [DB EXECUTE] USE `openwan_db`
+2013-01-18T20:58:58+08:00 DEBUG: [DB EXECUTE] SET NAMES 'utf8'
+2013-01-18T20:58:58+08:00 DEBUG: [DB EXECUTE] SHOW FULL COLUMNS FROM `openwan_db`.`ow_category`
+2013-01-18T20:58:58+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(files)
+2013-01-18T20:58:58+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(parent)
+2013-01-18T20:58:58+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(files)
+2013-01-18T20:58:58+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(parent)
+2013-01-18T20:58:58+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(children)
+2013-01-18T20:58:58+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(groups)
+2013-01-18T20:58:58+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(children)
+2013-01-18T20:58:58+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(groups)
+2013-01-18T20:58:58+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.*   FROM `openwan_db`.`ow_category`   WHERE ((`ow_category`.`id` = 1)) LIMIT 1
+2013-01-18T20:58:58+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.`id`   FROM `openwan_db`.`ow_category`   WHERE ((path like '%,1,%' and enabled=1) OR (id=1))
+2013-01-18T20:58:58+08:00 DEBUG: [DB EXECUTE] SHOW FULL COLUMNS FROM `openwan_db`.`ow_files`
+2013-01-18T20:58:58+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(category)
+2013-01-18T20:58:58+08:00 DEBUG: [DB EXECUTE] SELECT `ow_files`.*   FROM `openwan_db`.`ow_files`   WHERE ((category_id in ('1','2','3','5','7','9','57','62','73','86','87','88','89','90','91','92','102','95','96','97','98','99','100') and upload_username='admin'))   ORDER BY `ow_files`.`upload_at` desc LIMIT 0, 13
+2013-01-18T20:58:58+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.*   FROM `openwan_db`.`ow_category`   WHERE ((enabled=1))   ORDER BY `ow_category`.`weight` desc
+2013-01-18T20:58:58+08:00 DEBUG: --- SHUTDOWN TIME --- 1358513938.7752 (0.092185974121094)sec
+2013-01-18T20:59:02+08:00 DEBUG: --- STARTUP TIME --- 1358513942.9034
+2013-01-18T20:59:02+08:00 DEBUG: MyApp::_initConfig
+2013-01-18T20:59:02+08:00 DEBUG: session_start()
+2013-01-18T20:59:02+08:00 DEBUG: session_id: qvpo4a4omc2k53fbtvecar6i01
+2013-01-18T20:59:02+08:00 DEBUG: REQUEST UDI: admin::filecatalog/index@default
+2013-01-18T20:59:02+08:00 DEBUG: EXECUTE ACTION: Controller_Admin_FileCatalog::actionindex()
+2013-01-18T20:59:02+08:00 DEBUG: [DB EXECUTE] USE `openwan_db`
+2013-01-18T20:59:02+08:00 DEBUG: [DB EXECUTE] SET NAMES 'utf8'
+2013-01-18T20:59:02+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(files)
+2013-01-18T20:59:02+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(parent)
+2013-01-18T20:59:02+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(files)
+2013-01-18T20:59:02+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(parent)
+2013-01-18T20:59:02+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(children)
+2013-01-18T20:59:02+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(groups)
+2013-01-18T20:59:02+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(children)
+2013-01-18T20:59:02+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(groups)
+2013-01-18T20:59:02+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.*   FROM `openwan_db`.`ow_category`   WHERE ((`ow_category`.`id` = 1)) LIMIT 1
+2013-01-18T20:59:02+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.`id`   FROM `openwan_db`.`ow_category`   WHERE ((path like '%,1,%' and enabled=1) OR (id=1))
+2013-01-18T20:59:02+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(category)
+2013-01-18T20:59:02+08:00 DEBUG: [DB EXECUTE] SELECT COUNT(*)   FROM `openwan_db`.`ow_files`   WHERE ((category_id in ('1','2','3','5','7','9','57','62','73','86','87','88','89','90','91','92','102','95','96','97','98','99','100') and type=1 and upload_username='admin' and (status=0 or status=3)))
+2013-01-18T20:59:02+08:00 DEBUG: [DB EXECUTE] SELECT `ow_files`.*   FROM `openwan_db`.`ow_files`   WHERE ((category_id in ('1','2','3','5','7','9','57','62','73','86','87','88','89','90','91','92','102','95','96','97','98','99','100') and type=1 and upload_username='admin' and (status=0 or status=3)))   ORDER BY `ow_files`.`upload_at` desc LIMIT 0, 12
+2013-01-18T20:59:02+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.*   FROM `openwan_db`.`ow_category`   WHERE ((enabled=1))   ORDER BY `ow_category`.`weight` desc
+2013-01-18T20:59:02+08:00 DEBUG: --- SHUTDOWN TIME --- 1358513942.9847 (0.081277132034302)sec
+2013-01-18T20:59:04+08:00 DEBUG: --- STARTUP TIME --- 1358513944.0655
+2013-01-18T20:59:04+08:00 DEBUG: MyApp::_initConfig
+2013-01-18T20:59:04+08:00 DEBUG: session_start()
+2013-01-18T20:59:04+08:00 DEBUG: session_id: qvpo4a4omc2k53fbtvecar6i01
+2013-01-18T20:59:04+08:00 DEBUG: REQUEST UDI: admin::filecatalog/index@default
+2013-01-18T20:59:04+08:00 DEBUG: EXECUTE ACTION: Controller_Admin_FileCatalog::actionindex()
+2013-01-18T20:59:04+08:00 DEBUG: [DB EXECUTE] USE `openwan_db`
+2013-01-18T20:59:04+08:00 DEBUG: [DB EXECUTE] SET NAMES 'utf8'
+2013-01-18T20:59:04+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(files)
+2013-01-18T20:59:04+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(parent)
+2013-01-18T20:59:04+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(files)
+2013-01-18T20:59:04+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(parent)
+2013-01-18T20:59:04+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(children)
+2013-01-18T20:59:04+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(groups)
+2013-01-18T20:59:04+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(children)
+2013-01-18T20:59:04+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(groups)
+2013-01-18T20:59:04+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.*   FROM `openwan_db`.`ow_category`   WHERE ((`ow_category`.`id` = '1')) LIMIT 1
+2013-01-18T20:59:04+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.`id`   FROM `openwan_db`.`ow_category`   WHERE ((path like '%,1,%' and enabled=1) OR (id='1'))
+2013-01-18T20:59:04+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(category)
+2013-01-18T20:59:04+08:00 DEBUG: [DB EXECUTE] SELECT COUNT(*)   FROM `openwan_db`.`ow_files`   WHERE ((category_id in ('1','2','3','5','7','9','57','62','73','86','87','88','89','90','91','92','102','95','96','97','98','99','100') and type='2' and upload_username='admin' and (status=0 or status=3)))
+2013-01-18T20:59:04+08:00 DEBUG: [DB EXECUTE] SELECT `ow_files`.*   FROM `openwan_db`.`ow_files`   WHERE ((category_id in ('1','2','3','5','7','9','57','62','73','86','87','88','89','90','91','92','102','95','96','97','98','99','100') and type='2' and upload_username='admin' and (status=0 or status=3)))   ORDER BY `ow_files`.`upload_at` desc LIMIT 0, 12
+2013-01-18T20:59:04+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.*   FROM `openwan_db`.`ow_category`   WHERE ((enabled=1))   ORDER BY `ow_category`.`weight` desc
+2013-01-18T20:59:04+08:00 DEBUG: --- SHUTDOWN TIME --- 1358513944.2324 (0.16693496704102)sec
+2013-01-18T20:59:05+08:00 DEBUG: --- STARTUP TIME --- 1358513945.2226
+2013-01-18T20:59:05+08:00 DEBUG: MyApp::_initConfig
+2013-01-18T20:59:05+08:00 DEBUG: session_start()
+2013-01-18T20:59:05+08:00 DEBUG: session_id: qvpo4a4omc2k53fbtvecar6i01
+2013-01-18T20:59:05+08:00 DEBUG: REQUEST UDI: admin::filecatalog/index@default
+2013-01-18T20:59:05+08:00 DEBUG: EXECUTE ACTION: Controller_Admin_FileCatalog::actionindex()
+2013-01-18T20:59:05+08:00 DEBUG: [DB EXECUTE] USE `openwan_db`
+2013-01-18T20:59:05+08:00 DEBUG: [DB EXECUTE] SET NAMES 'utf8'
+2013-01-18T20:59:05+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(files)
+2013-01-18T20:59:05+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(parent)
+2013-01-18T20:59:05+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(files)
+2013-01-18T20:59:05+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(parent)
+2013-01-18T20:59:05+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(children)
+2013-01-18T20:59:05+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(groups)
+2013-01-18T20:59:05+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(children)
+2013-01-18T20:59:05+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(groups)
+2013-01-18T20:59:05+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.*   FROM `openwan_db`.`ow_category`   WHERE ((`ow_category`.`id` = '1')) LIMIT 1
+2013-01-18T20:59:05+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.`id`   FROM `openwan_db`.`ow_category`   WHERE ((path like '%,1,%' and enabled=1) OR (id='1'))
+2013-01-18T20:59:05+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(category)
+2013-01-18T20:59:05+08:00 DEBUG: [DB EXECUTE] SELECT COUNT(*)   FROM `openwan_db`.`ow_files`   WHERE ((category_id in ('1','2','3','5','7','9','57','62','73','86','87','88','89','90','91','92','102','95','96','97','98','99','100') and type=1 and upload_username='admin' and (status=0 or status=3)))
+2013-01-18T20:59:05+08:00 DEBUG: [DB EXECUTE] SELECT `ow_files`.*   FROM `openwan_db`.`ow_files`   WHERE ((category_id in ('1','2','3','5','7','9','57','62','73','86','87','88','89','90','91','92','102','95','96','97','98','99','100') and type=1 and upload_username='admin' and (status=0 or status=3)))   ORDER BY `ow_files`.`upload_at` desc LIMIT 0, 12
+2013-01-18T20:59:05+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.*   FROM `openwan_db`.`ow_category`   WHERE ((enabled=1))   ORDER BY `ow_category`.`weight` desc
+2013-01-18T20:59:05+08:00 DEBUG: --- SHUTDOWN TIME --- 1358513945.3044 (0.081873893737793)sec
+2013-01-18T20:59:06+08:00 DEBUG: --- STARTUP TIME --- 1358513946.2976
+2013-01-18T20:59:06+08:00 DEBUG: MyApp::_initConfig
+2013-01-18T20:59:06+08:00 DEBUG: session_start()
+2013-01-18T20:59:06+08:00 DEBUG: session_id: qvpo4a4omc2k53fbtvecar6i01
+2013-01-18T20:59:06+08:00 DEBUG: REQUEST UDI: admin::filecatalog/preview@default
+2013-01-18T20:59:06+08:00 DEBUG: EXECUTE ACTION: Controller_Admin_FileCatalog::actionpreview()
+2013-01-18T20:59:06+08:00 DEBUG: [DB EXECUTE] USE `openwan_db`
+2013-01-18T20:59:06+08:00 DEBUG: [DB EXECUTE] SET NAMES 'utf8'
+2013-01-18T20:59:06+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(category)
+2013-01-18T20:59:06+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(files)
+2013-01-18T20:59:06+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(parent)
+2013-01-18T20:59:06+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(children)
+2013-01-18T20:59:06+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(groups)
+2013-01-18T20:59:06+08:00 DEBUG: [DB EXECUTE] SELECT `ow_files`.*   FROM `openwan_db`.`ow_files`   WHERE ((`ow_files`.`id` = '91')) LIMIT 1
+2013-01-18T20:59:06+08:00 DEBUG: --- SHUTDOWN TIME --- 1358513946.4609 (0.16329503059387)sec
+2013-01-18T20:59:07+08:00 DEBUG: --- STARTUP TIME --- 1358513947.8005
+2013-01-18T20:59:07+08:00 DEBUG: MyApp::_initConfig
+2013-01-18T20:59:07+08:00 DEBUG: session_start()
+2013-01-18T20:59:07+08:00 DEBUG: session_id: qvpo4a4omc2k53fbtvecar6i01
+2013-01-18T20:59:07+08:00 DEBUG: REQUEST UDI: admin::filecatalog/index@default
+2013-01-18T20:59:07+08:00 DEBUG: EXECUTE ACTION: Controller_Admin_FileCatalog::actionindex()
+2013-01-18T20:59:07+08:00 DEBUG: [DB EXECUTE] USE `openwan_db`
+2013-01-18T20:59:07+08:00 DEBUG: [DB EXECUTE] SET NAMES 'utf8'
+2013-01-18T20:59:07+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(files)
+2013-01-18T20:59:07+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(parent)
+2013-01-18T20:59:07+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(files)
+2013-01-18T20:59:07+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(parent)
+2013-01-18T20:59:07+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(children)
+2013-01-18T20:59:07+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(groups)
+2013-01-18T20:59:07+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(children)
+2013-01-18T20:59:07+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(groups)
+2013-01-18T20:59:07+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.*   FROM `openwan_db`.`ow_category`   WHERE ((`ow_category`.`id` = '1')) LIMIT 1
+2013-01-18T20:59:07+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.`id`   FROM `openwan_db`.`ow_category`   WHERE ((path like '%,1,%' and enabled=1) OR (id='1'))
+2013-01-18T20:59:07+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(category)
+2013-01-18T20:59:07+08:00 DEBUG: [DB EXECUTE] SELECT COUNT(*)   FROM `openwan_db`.`ow_files`   WHERE ((category_id in ('1','2','3','5','7','9','57','62','73','86','87','88','89','90','91','92','102','95','96','97','98','99','100') and type='2' and upload_username='admin' and (status=0 or status=3)))
+2013-01-18T20:59:07+08:00 DEBUG: [DB EXECUTE] SELECT `ow_files`.*   FROM `openwan_db`.`ow_files`   WHERE ((category_id in ('1','2','3','5','7','9','57','62','73','86','87','88','89','90','91','92','102','95','96','97','98','99','100') and type='2' and upload_username='admin' and (status=0 or status=3)))   ORDER BY `ow_files`.`upload_at` desc LIMIT 0, 12
+2013-01-18T20:59:07+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.*   FROM `openwan_db`.`ow_category`   WHERE ((enabled=1))   ORDER BY `ow_category`.`weight` desc
+2013-01-18T20:59:07+08:00 DEBUG: --- SHUTDOWN TIME --- 1358513947.8824 (0.081845045089722)sec
+2013-01-18T20:59:08+08:00 DEBUG: --- STARTUP TIME --- 1358513948.7487
+2013-01-18T20:59:08+08:00 DEBUG: MyApp::_initConfig
+2013-01-18T20:59:08+08:00 DEBUG: session_start()
+2013-01-18T20:59:08+08:00 DEBUG: session_id: qvpo4a4omc2k53fbtvecar6i01
+2013-01-18T20:59:08+08:00 DEBUG: REQUEST UDI: admin::filecatalog/preview@default
+2013-01-18T20:59:08+08:00 DEBUG: EXECUTE ACTION: Controller_Admin_FileCatalog::actionpreview()
+2013-01-18T20:59:08+08:00 DEBUG: [DB EXECUTE] USE `openwan_db`
+2013-01-18T20:59:08+08:00 DEBUG: [DB EXECUTE] SET NAMES 'utf8'
+2013-01-18T20:59:08+08:00 DEBUG: [DB EXECUTE] SHOW FULL COLUMNS FROM `openwan_db`.`ow_files`
+2013-01-18T20:59:08+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(category)
+2013-01-18T20:59:08+08:00 DEBUG: [DB EXECUTE] SHOW FULL COLUMNS FROM `openwan_db`.`ow_category`
+2013-01-18T20:59:08+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(files)
+2013-01-18T20:59:08+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(parent)
+2013-01-18T20:59:08+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(children)
+2013-01-18T20:59:08+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(groups)
+2013-01-18T20:59:08+08:00 DEBUG: [DB EXECUTE] SELECT `ow_files`.*   FROM `openwan_db`.`ow_files`   WHERE ((`ow_files`.`id` = '51')) LIMIT 1
+2013-01-18T20:59:09+08:00 DEBUG: --- SHUTDOWN TIME --- 1358513949.7751 (1.026407957077)sec
+2013-01-18T20:59:11+08:00 DEBUG: --- STARTUP TIME --- 1358513951.3489
+2013-01-18T20:59:11+08:00 DEBUG: MyApp::_initConfig
+2013-01-18T20:59:11+08:00 DEBUG: session_start()
+2013-01-18T20:59:11+08:00 DEBUG: session_id: qvpo4a4omc2k53fbtvecar6i01
+2013-01-18T20:59:11+08:00 DEBUG: REQUEST UDI: admin::filecatalog/preview@default
+2013-01-18T20:59:11+08:00 DEBUG: EXECUTE ACTION: Controller_Admin_FileCatalog::actionpreview()
+2013-01-18T20:59:11+08:00 DEBUG: [DB EXECUTE] USE `openwan_db`
+2013-01-18T20:59:11+08:00 DEBUG: [DB EXECUTE] SET NAMES 'utf8'
+2013-01-18T20:59:11+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(category)
+2013-01-18T20:59:11+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(files)
+2013-01-18T20:59:11+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(parent)
+2013-01-18T20:59:11+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(children)
+2013-01-18T20:59:11+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(groups)
+2013-01-18T20:59:11+08:00 DEBUG: [DB EXECUTE] SELECT `ow_files`.*   FROM `openwan_db`.`ow_files`   WHERE ((`ow_files`.`id` = '47')) LIMIT 1
+2013-01-18T20:59:11+08:00 DEBUG: --- SHUTDOWN TIME --- 1358513951.6929 (0.34401202201843)sec
+2013-01-18T20:59:12+08:00 DEBUG: --- STARTUP TIME --- 1358513952.584
+2013-01-18T20:59:12+08:00 DEBUG: MyApp::_initConfig
+2013-01-18T20:59:12+08:00 DEBUG: session_start()
+2013-01-18T20:59:12+08:00 DEBUG: session_id: qvpo4a4omc2k53fbtvecar6i01
+2013-01-18T20:59:12+08:00 DEBUG: REQUEST UDI: admin::filecatalog/preview@default
+2013-01-18T20:59:12+08:00 DEBUG: EXECUTE ACTION: Controller_Admin_FileCatalog::actionpreview()
+2013-01-18T20:59:12+08:00 DEBUG: [DB EXECUTE] USE `openwan_db`
+2013-01-18T20:59:12+08:00 DEBUG: [DB EXECUTE] SET NAMES 'utf8'
+2013-01-18T20:59:12+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(category)
+2013-01-18T20:59:12+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(files)
+2013-01-18T20:59:12+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(parent)
+2013-01-18T20:59:12+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(children)
+2013-01-18T20:59:12+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(groups)
+2013-01-18T20:59:12+08:00 DEBUG: [DB EXECUTE] SELECT `ow_files`.*   FROM `openwan_db`.`ow_files`   WHERE ((`ow_files`.`id` = '46')) LIMIT 1
+2013-01-18T20:59:12+08:00 DEBUG: --- SHUTDOWN TIME --- 1358513952.8773 (0.29329109191895)sec
+2013-01-18T20:59:13+08:00 DEBUG: --- STARTUP TIME --- 1358513953.1801
+2013-01-18T20:59:13+08:00 DEBUG: MyApp::_initConfig
+2013-01-18T20:59:13+08:00 DEBUG: session_start()
+2013-01-18T20:59:13+08:00 DEBUG: session_id: qvpo4a4omc2k53fbtvecar6i01
+2013-01-18T20:59:13+08:00 DEBUG: REQUEST UDI: admin::filecatalog/catalog@default
+2013-01-18T20:59:13+08:00 DEBUG: EXECUTE ACTION: Controller_Admin_FileCatalog::actioncatalog()
+2013-01-18T20:59:13+08:00 DEBUG: [DB EXECUTE] USE `openwan_db`
+2013-01-18T20:59:13+08:00 DEBUG: [DB EXECUTE] SET NAMES 'utf8'
+2013-01-18T20:59:13+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(category)
+2013-01-18T20:59:13+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(files)
+2013-01-18T20:59:13+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(parent)
+2013-01-18T20:59:13+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(children)
+2013-01-18T20:59:13+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(groups)
+2013-01-18T20:59:13+08:00 DEBUG: [DB EXECUTE] SELECT `ow_files`.*   FROM `openwan_db`.`ow_files`   WHERE ((`ow_files`.`id` = '47')) LIMIT 1
+2013-01-18T20:59:13+08:00 DEBUG: --- SHUTDOWN TIME --- 1358513953.2299 (0.049776792526245)sec
+2013-01-18T20:59:15+08:00 DEBUG: --- STARTUP TIME --- 1358513955.9012
+2013-01-18T20:59:15+08:00 DEBUG: MyApp::_initConfig
+2013-01-18T20:59:15+08:00 DEBUG: session_start()
+2013-01-18T20:59:15+08:00 DEBUG: session_id: qvpo4a4omc2k53fbtvecar6i01
+2013-01-18T20:59:15+08:00 DEBUG: REQUEST UDI: admin::filecatalog/index@default
+2013-01-18T20:59:15+08:00 DEBUG: EXECUTE ACTION: Controller_Admin_FileCatalog::actionindex()
+2013-01-18T20:59:16+08:00 DEBUG: [DB EXECUTE] USE `openwan_db`
+2013-01-18T20:59:16+08:00 DEBUG: [DB EXECUTE] SET NAMES 'utf8'
+2013-01-18T20:59:16+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(files)
+2013-01-18T20:59:16+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(parent)
+2013-01-18T20:59:16+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(files)
+2013-01-18T20:59:16+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(parent)
+2013-01-18T20:59:16+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(children)
+2013-01-18T20:59:16+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(groups)
+2013-01-18T20:59:16+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(children)
+2013-01-18T20:59:16+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(groups)
+2013-01-18T20:59:16+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.*   FROM `openwan_db`.`ow_category`   WHERE ((`ow_category`.`id` = '1')) LIMIT 1
+2013-01-18T20:59:16+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.`id`   FROM `openwan_db`.`ow_category`   WHERE ((path like '%,1,%' and enabled=1) OR (id='1'))
+2013-01-18T20:59:16+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(category)
+2013-01-18T20:59:16+08:00 DEBUG: [DB EXECUTE] SELECT COUNT(*)   FROM `openwan_db`.`ow_files`   WHERE ((category_id in ('1','2','3','5','7','9','57','62','73','86','87','88','89','90','91','92','102','95','96','97','98','99','100') and type='3' and upload_username='admin' and (status=0 or status=3)))
+2013-01-18T20:59:16+08:00 DEBUG: [DB EXECUTE] SELECT `ow_files`.*   FROM `openwan_db`.`ow_files`   WHERE ((category_id in ('1','2','3','5','7','9','57','62','73','86','87','88','89','90','91','92','102','95','96','97','98','99','100') and type='3' and upload_username='admin' and (status=0 or status=3)))   ORDER BY `ow_files`.`upload_at` desc LIMIT 0, 12
+2013-01-18T20:59:16+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.*   FROM `openwan_db`.`ow_category`   WHERE ((enabled=1))   ORDER BY `ow_category`.`weight` desc
+2013-01-18T20:59:16+08:00 DEBUG: --- SHUTDOWN TIME --- 1358513956.055 (0.15377712249756)sec
+2013-01-18T20:59:17+08:00 DEBUG: --- STARTUP TIME --- 1358513957.4213
+2013-01-18T20:59:17+08:00 DEBUG: MyApp::_initConfig
+2013-01-18T20:59:17+08:00 DEBUG: session_start()
+2013-01-18T20:59:17+08:00 DEBUG: session_id: qvpo4a4omc2k53fbtvecar6i01
+2013-01-18T20:59:17+08:00 DEBUG: REQUEST UDI: admin::filecatalog/preview@default
+2013-01-18T20:59:17+08:00 DEBUG: EXECUTE ACTION: Controller_Admin_FileCatalog::actionpreview()
+2013-01-18T20:59:17+08:00 DEBUG: [DB EXECUTE] USE `openwan_db`
+2013-01-18T20:59:17+08:00 DEBUG: [DB EXECUTE] SET NAMES 'utf8'
+2013-01-18T20:59:17+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(category)
+2013-01-18T20:59:17+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(files)
+2013-01-18T20:59:17+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(parent)
+2013-01-18T20:59:17+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(children)
+2013-01-18T20:59:17+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(groups)
+2013-01-18T20:59:17+08:00 DEBUG: [DB EXECUTE] SELECT `ow_files`.*   FROM `openwan_db`.`ow_files`   WHERE ((`ow_files`.`id` = '3')) LIMIT 1
+2013-01-18T20:59:17+08:00 DEBUG: --- SHUTDOWN TIME --- 1358513957.4701 (0.048797845840454)sec
+2013-01-18T20:59:18+08:00 DEBUG: --- STARTUP TIME --- 1358513958.3843
+2013-01-18T20:59:18+08:00 DEBUG: MyApp::_initConfig
+2013-01-18T20:59:18+08:00 DEBUG: session_start()
+2013-01-18T20:59:18+08:00 DEBUG: session_id: qvpo4a4omc2k53fbtvecar6i01
+2013-01-18T20:59:18+08:00 DEBUG: REQUEST UDI: admin::filecatalog/catalog@default
+2013-01-18T20:59:18+08:00 DEBUG: EXECUTE ACTION: Controller_Admin_FileCatalog::actioncatalog()
+2013-01-18T20:59:18+08:00 DEBUG: [DB EXECUTE] USE `openwan_db`
+2013-01-18T20:59:18+08:00 DEBUG: [DB EXECUTE] SET NAMES 'utf8'
+2013-01-18T20:59:18+08:00 DEBUG: [DB EXECUTE] SHOW FULL COLUMNS FROM `openwan_db`.`ow_files`
+2013-01-18T20:59:18+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(category)
+2013-01-18T20:59:18+08:00 DEBUG: [DB EXECUTE] SHOW FULL COLUMNS FROM `openwan_db`.`ow_category`
+2013-01-18T20:59:18+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(files)
+2013-01-18T20:59:18+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(parent)
+2013-01-18T20:59:18+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(children)
+2013-01-18T20:59:18+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(groups)
+2013-01-18T20:59:18+08:00 DEBUG: [DB EXECUTE] SELECT `ow_files`.*   FROM `openwan_db`.`ow_files`   WHERE ((`ow_files`.`id` = '3')) LIMIT 1
+2013-01-18T20:59:18+08:00 DEBUG: --- SHUTDOWN TIME --- 1358513958.4463 (0.061992168426514)sec
+2013-01-18T20:59:18+08:00 DEBUG: --- STARTUP TIME --- 1358513958.3923
+2013-01-18T20:59:18+08:00 DEBUG: MyApp::_initConfig
+2013-01-18T20:59:18+08:00 DEBUG: session_start()
+2013-01-18T20:59:18+08:00 DEBUG: session_id: qvpo4a4omc2k53fbtvecar6i01
+2013-01-18T20:59:18+08:00 DEBUG: REQUEST UDI: admin::filecatalog/preview@default
+2013-01-18T20:59:18+08:00 DEBUG: EXECUTE ACTION: Controller_Admin_FileCatalog::actionpreview()
+2013-01-18T20:59:18+08:00 DEBUG: [DB EXECUTE] USE `openwan_db`
+2013-01-18T20:59:18+08:00 DEBUG: [DB EXECUTE] SET NAMES 'utf8'
+2013-01-18T20:59:18+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(category)
+2013-01-18T20:59:18+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(files)
+2013-01-18T20:59:18+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(parent)
+2013-01-18T20:59:18+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(children)
+2013-01-18T20:59:18+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(groups)
+2013-01-18T20:59:18+08:00 DEBUG: [DB EXECUTE] SELECT `ow_files`.*   FROM `openwan_db`.`ow_files`   WHERE ((`ow_files`.`id` = '3')) LIMIT 1
+2013-01-18T20:59:18+08:00 DEBUG: --- SHUTDOWN TIME --- 1358513958.4907 (0.098305940628052)sec
+2013-01-18T20:59:19+08:00 DEBUG: --- STARTUP TIME --- 1358513959.8212
+2013-01-18T20:59:19+08:00 DEBUG: MyApp::_initConfig
+2013-01-18T20:59:19+08:00 DEBUG: session_start()
+2013-01-18T20:59:19+08:00 DEBUG: session_id: qvpo4a4omc2k53fbtvecar6i01
+2013-01-18T20:59:19+08:00 DEBUG: REQUEST UDI: admin::filecatalog/index@default
+2013-01-18T20:59:19+08:00 DEBUG: EXECUTE ACTION: Controller_Admin_FileCatalog::actionindex()
+2013-01-18T20:59:19+08:00 DEBUG: [DB EXECUTE] USE `openwan_db`
+2013-01-18T20:59:19+08:00 DEBUG: [DB EXECUTE] SET NAMES 'utf8'
+2013-01-18T20:59:19+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(files)
+2013-01-18T20:59:19+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(parent)
+2013-01-18T20:59:19+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(files)
+2013-01-18T20:59:19+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(parent)
+2013-01-18T20:59:19+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(children)
+2013-01-18T20:59:19+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(groups)
+2013-01-18T20:59:19+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(children)
+2013-01-18T20:59:19+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(groups)
+2013-01-18T20:59:19+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.*   FROM `openwan_db`.`ow_category`   WHERE ((`ow_category`.`id` = '1')) LIMIT 1
+2013-01-18T20:59:19+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.`id`   FROM `openwan_db`.`ow_category`   WHERE ((path like '%,1,%' and enabled=1) OR (id='1'))
+2013-01-18T20:59:19+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(category)
+2013-01-18T20:59:19+08:00 DEBUG: [DB EXECUTE] SELECT COUNT(*)   FROM `openwan_db`.`ow_files`   WHERE ((category_id in ('1','2','3','5','7','9','57','62','73','86','87','88','89','90','91','92','102','95','96','97','98','99','100') and type='4' and upload_username='admin' and (status=0 or status=3)))
+2013-01-18T20:59:19+08:00 DEBUG: [DB EXECUTE] SELECT `ow_files`.*   FROM `openwan_db`.`ow_files`   WHERE ((category_id in ('1','2','3','5','7','9','57','62','73','86','87','88','89','90','91','92','102','95','96','97','98','99','100') and type='4' and upload_username='admin' and (status=0 or status=3)))   ORDER BY `ow_files`.`upload_at` desc LIMIT 0, 12
+2013-01-18T20:59:19+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.*   FROM `openwan_db`.`ow_category`   WHERE ((enabled=1))   ORDER BY `ow_category`.`weight` desc
+2013-01-18T20:59:19+08:00 DEBUG: --- SHUTDOWN TIME --- 1358513959.9006 (0.079334020614624)sec
+2013-01-18T20:59:21+08:00 DEBUG: --- STARTUP TIME --- 1358513961.1834
+2013-01-18T20:59:21+08:00 DEBUG: MyApp::_initConfig
+2013-01-18T20:59:21+08:00 DEBUG: session_start()
+2013-01-18T20:59:21+08:00 DEBUG: session_id: qvpo4a4omc2k53fbtvecar6i01
+2013-01-18T20:59:21+08:00 DEBUG: REQUEST UDI: admin::filecatalog/preview@default
+2013-01-18T20:59:21+08:00 DEBUG: EXECUTE ACTION: Controller_Admin_FileCatalog::actionpreview()
+2013-01-18T20:59:21+08:00 DEBUG: [DB EXECUTE] USE `openwan_db`
+2013-01-18T20:59:21+08:00 DEBUG: [DB EXECUTE] SET NAMES 'utf8'
+2013-01-18T20:59:21+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(category)
+2013-01-18T20:59:21+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(files)
+2013-01-18T20:59:21+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(parent)
+2013-01-18T20:59:21+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(children)
+2013-01-18T20:59:21+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(groups)
+2013-01-18T20:59:21+08:00 DEBUG: [DB EXECUTE] SELECT `ow_files`.*   FROM `openwan_db`.`ow_files`   WHERE ((`ow_files`.`id` = '45')) LIMIT 1
+2013-01-18T20:59:21+08:00 DEBUG: --- SHUTDOWN TIME --- 1358513961.2324 (0.049007892608643)sec
+2013-01-18T20:59:21+08:00 DEBUG: --- STARTUP TIME --- 1358513961.1834
+2013-01-18T20:59:21+08:00 DEBUG: MyApp::_initConfig
+2013-01-18T20:59:21+08:00 DEBUG: session_start()
+2013-01-18T20:59:21+08:00 DEBUG: session_id: qvpo4a4omc2k53fbtvecar6i01
+2013-01-18T20:59:21+08:00 DEBUG: REQUEST UDI: admin::filecatalog/catalog@default
+2013-01-18T20:59:21+08:00 DEBUG: EXECUTE ACTION: Controller_Admin_FileCatalog::actioncatalog()
+2013-01-18T20:59:21+08:00 DEBUG: [DB EXECUTE] USE `openwan_db`
+2013-01-18T20:59:21+08:00 DEBUG: [DB EXECUTE] SET NAMES 'utf8'
+2013-01-18T20:59:21+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(category)
+2013-01-18T20:59:21+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(files)
+2013-01-18T20:59:21+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(parent)
+2013-01-18T20:59:21+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(children)
+2013-01-18T20:59:21+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(groups)
+2013-01-18T20:59:21+08:00 DEBUG: [DB EXECUTE] SELECT `ow_files`.*   FROM `openwan_db`.`ow_files`   WHERE ((`ow_files`.`id` = '45')) LIMIT 1
+2013-01-18T20:59:21+08:00 DEBUG: --- SHUTDOWN TIME --- 1358513961.2694 (0.085988998413086)sec
+2013-01-18T20:59:22+08:00 DEBUG: --- STARTUP TIME --- 1358513962.4063
+2013-01-18T20:59:22+08:00 DEBUG: MyApp::_initConfig
+2013-01-18T20:59:22+08:00 DEBUG: session_start()
+2013-01-18T20:59:22+08:00 DEBUG: session_id: qvpo4a4omc2k53fbtvecar6i01
+2013-01-18T20:59:22+08:00 DEBUG: REQUEST UDI: admin::filecatalog/index@default
+2013-01-18T20:59:22+08:00 DEBUG: EXECUTE ACTION: Controller_Admin_FileCatalog::actionindex()
+2013-01-18T20:59:22+08:00 DEBUG: [DB EXECUTE] USE `openwan_db`
+2013-01-18T20:59:22+08:00 DEBUG: [DB EXECUTE] SET NAMES 'utf8'
+2013-01-18T20:59:22+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(files)
+2013-01-18T20:59:22+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(parent)
+2013-01-18T20:59:22+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(files)
+2013-01-18T20:59:22+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(parent)
+2013-01-18T20:59:22+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(children)
+2013-01-18T20:59:22+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(groups)
+2013-01-18T20:59:22+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(children)
+2013-01-18T20:59:22+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(groups)
+2013-01-18T20:59:22+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.*   FROM `openwan_db`.`ow_category`   WHERE ((`ow_category`.`id` = '1')) LIMIT 1
+2013-01-18T20:59:22+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.`id`   FROM `openwan_db`.`ow_category`   WHERE ((path like '%,1,%' and enabled=1) OR (id='1'))
+2013-01-18T20:59:22+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(category)
+2013-01-18T20:59:22+08:00 DEBUG: [DB EXECUTE] SELECT COUNT(*)   FROM `openwan_db`.`ow_files`   WHERE ((category_id in ('1','2','3','5','7','9','57','62','73','86','87','88','89','90','91','92','102','95','96','97','98','99','100') and type='3' and upload_username='admin' and (status=0 or status=3)))
+2013-01-18T20:59:22+08:00 DEBUG: [DB EXECUTE] SELECT `ow_files`.*   FROM `openwan_db`.`ow_files`   WHERE ((category_id in ('1','2','3','5','7','9','57','62','73','86','87','88','89','90','91','92','102','95','96','97','98','99','100') and type='3' and upload_username='admin' and (status=0 or status=3)))   ORDER BY `ow_files`.`upload_at` desc LIMIT 0, 12
+2013-01-18T20:59:22+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.*   FROM `openwan_db`.`ow_category`   WHERE ((enabled=1))   ORDER BY `ow_category`.`weight` desc
+2013-01-18T20:59:22+08:00 DEBUG: --- SHUTDOWN TIME --- 1358513962.4801 (0.073729038238525)sec
+2013-01-18T20:59:22+08:00 DEBUG: --- STARTUP TIME --- 1358513962.7177
+2013-01-18T20:59:22+08:00 DEBUG: MyApp::_initConfig
+2013-01-18T20:59:22+08:00 DEBUG: session_start()
+2013-01-18T20:59:22+08:00 DEBUG: session_id: qvpo4a4omc2k53fbtvecar6i01
+2013-01-18T20:59:22+08:00 DEBUG: REQUEST UDI: admin::filecatalog/index@default
+2013-01-18T20:59:22+08:00 DEBUG: EXECUTE ACTION: Controller_Admin_FileCatalog::actionindex()
+2013-01-18T20:59:22+08:00 DEBUG: [DB EXECUTE] USE `openwan_db`
+2013-01-18T20:59:22+08:00 DEBUG: [DB EXECUTE] SET NAMES 'utf8'
+2013-01-18T20:59:22+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(files)
+2013-01-18T20:59:22+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(parent)
+2013-01-18T20:59:22+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(files)
+2013-01-18T20:59:22+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(parent)
+2013-01-18T20:59:22+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(children)
+2013-01-18T20:59:22+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(groups)
+2013-01-18T20:59:22+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(children)
+2013-01-18T20:59:22+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(groups)
+2013-01-18T20:59:22+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.*   FROM `openwan_db`.`ow_category`   WHERE ((`ow_category`.`id` = '1')) LIMIT 1
+2013-01-18T20:59:22+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.`id`   FROM `openwan_db`.`ow_category`   WHERE ((path like '%,1,%' and enabled=1) OR (id='1'))
+2013-01-18T20:59:22+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(category)
+2013-01-18T20:59:22+08:00 DEBUG: [DB EXECUTE] SELECT COUNT(*)   FROM `openwan_db`.`ow_files`   WHERE ((category_id in ('1','2','3','5','7','9','57','62','73','86','87','88','89','90','91','92','102','95','96','97','98','99','100') and type='2' and upload_username='admin' and (status=0 or status=3)))
+2013-01-18T20:59:22+08:00 DEBUG: [DB EXECUTE] SELECT `ow_files`.*   FROM `openwan_db`.`ow_files`   WHERE ((category_id in ('1','2','3','5','7','9','57','62','73','86','87','88','89','90','91','92','102','95','96','97','98','99','100') and type='2' and upload_username='admin' and (status=0 or status=3)))   ORDER BY `ow_files`.`upload_at` desc LIMIT 0, 12
+2013-01-18T20:59:22+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.*   FROM `openwan_db`.`ow_category`   WHERE ((enabled=1))   ORDER BY `ow_category`.`weight` desc
+2013-01-18T20:59:22+08:00 DEBUG: --- SHUTDOWN TIME --- 1358513962.7884 (0.070657014846802)sec
+2013-01-18T20:59:23+08:00 DEBUG: --- STARTUP TIME --- 1358513963.6314
+2013-01-18T20:59:23+08:00 DEBUG: MyApp::_initConfig
+2013-01-18T20:59:23+08:00 DEBUG: session_start()
+2013-01-18T20:59:23+08:00 DEBUG: session_id: qvpo4a4omc2k53fbtvecar6i01
+2013-01-18T20:59:23+08:00 DEBUG: REQUEST UDI: admin::fileputout/index@default
+2013-01-18T20:59:23+08:00 DEBUG: EXECUTE ACTION: Controller_Admin_FilePutOut::actionindex()
+2013-01-18T20:59:23+08:00 DEBUG: [DB EXECUTE] USE `openwan_db`
+2013-01-18T20:59:23+08:00 DEBUG: [DB EXECUTE] SET NAMES 'utf8'
+2013-01-18T20:59:23+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(files)
+2013-01-18T20:59:23+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(parent)
+2013-01-18T20:59:23+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(files)
+2013-01-18T20:59:23+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(parent)
+2013-01-18T20:59:23+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(children)
+2013-01-18T20:59:23+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(groups)
+2013-01-18T20:59:23+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(children)
+2013-01-18T20:59:23+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(groups)
+2013-01-18T20:59:23+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.*   FROM `openwan_db`.`ow_category`   WHERE ((`ow_category`.`id` = 1)) LIMIT 1
+2013-01-18T20:59:23+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.`id`   FROM `openwan_db`.`ow_category`   WHERE ((path like '%,1,%' and enabled=1) OR (id=1))
+2013-01-18T20:59:23+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(category)
+2013-01-18T20:59:23+08:00 DEBUG: [DB EXECUTE] SELECT COUNT(*)   FROM `openwan_db`.`ow_files`   WHERE ((category_id in ('1','2','3','5','7','9','57','62','73','86','87','88','89','90','91','92','102','95','96','97','98','99','100') and type=1 and upload_username='admin' and status=1))
+2013-01-18T20:59:23+08:00 DEBUG: [DB EXECUTE] SELECT `ow_files`.*   FROM `openwan_db`.`ow_files`   WHERE ((category_id in ('1','2','3','5','7','9','57','62','73','86','87','88','89','90','91','92','102','95','96','97','98','99','100') and type=1 and upload_username='admin' and status=1))   ORDER BY `ow_files`.`upload_at` desc LIMIT 0, 12
+2013-01-18T20:59:23+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.*   FROM `openwan_db`.`ow_category`   WHERE ((enabled=1))   ORDER BY `ow_category`.`weight` desc
+2013-01-18T20:59:23+08:00 DEBUG: --- SHUTDOWN TIME --- 1358513963.6995 (0.068128108978271)sec
+2013-01-18T20:59:25+08:00 DEBUG: --- STARTUP TIME --- 1358513965.4867
+2013-01-18T20:59:25+08:00 DEBUG: MyApp::_initConfig
+2013-01-18T20:59:25+08:00 DEBUG: session_start()
+2013-01-18T20:59:25+08:00 DEBUG: session_id: qvpo4a4omc2k53fbtvecar6i01
+2013-01-18T20:59:25+08:00 DEBUG: REQUEST UDI: admin::fileputout/index@default
+2013-01-18T20:59:25+08:00 DEBUG: EXECUTE ACTION: Controller_Admin_FilePutOut::actionindex()
+2013-01-18T20:59:25+08:00 DEBUG: [DB EXECUTE] USE `openwan_db`
+2013-01-18T20:59:25+08:00 DEBUG: [DB EXECUTE] SET NAMES 'utf8'
+2013-01-18T20:59:25+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(files)
+2013-01-18T20:59:25+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(parent)
+2013-01-18T20:59:25+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(files)
+2013-01-18T20:59:25+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(parent)
+2013-01-18T20:59:25+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(children)
+2013-01-18T20:59:25+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(groups)
+2013-01-18T20:59:25+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(children)
+2013-01-18T20:59:25+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(groups)
+2013-01-18T20:59:25+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.*   FROM `openwan_db`.`ow_category`   WHERE ((`ow_category`.`id` = '1')) LIMIT 1
+2013-01-18T20:59:25+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.`id`   FROM `openwan_db`.`ow_category`   WHERE ((path like '%,1,%' and enabled=1) OR (id='1'))
+2013-01-18T20:59:25+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(category)
+2013-01-18T20:59:25+08:00 DEBUG: [DB EXECUTE] SELECT COUNT(*)   FROM `openwan_db`.`ow_files`   WHERE ((category_id in ('1','2','3','5','7','9','57','62','73','86','87','88','89','90','91','92','102','95','96','97','98','99','100') and type='2' and upload_username='admin' and status=1))
+2013-01-18T20:59:25+08:00 DEBUG: [DB EXECUTE] SELECT `ow_files`.*   FROM `openwan_db`.`ow_files`   WHERE ((category_id in ('1','2','3','5','7','9','57','62','73','86','87','88','89','90','91','92','102','95','96','97','98','99','100') and type='2' and upload_username='admin' and status=1))   ORDER BY `ow_files`.`upload_at` desc LIMIT 0, 12
+2013-01-18T20:59:25+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.*   FROM `openwan_db`.`ow_category`   WHERE ((enabled=1))   ORDER BY `ow_category`.`weight` desc
+2013-01-18T20:59:25+08:00 DEBUG: --- SHUTDOWN TIME --- 1358513965.642 (0.1553008556366)sec
+2013-01-18T20:59:26+08:00 DEBUG: --- STARTUP TIME --- 1358513966.0387
+2013-01-18T20:59:26+08:00 DEBUG: MyApp::_initConfig
+2013-01-18T20:59:26+08:00 DEBUG: session_start()
+2013-01-18T20:59:26+08:00 DEBUG: session_id: qvpo4a4omc2k53fbtvecar6i01
+2013-01-18T20:59:26+08:00 DEBUG: REQUEST UDI: admin::fileputout/index@default
+2013-01-18T20:59:26+08:00 DEBUG: EXECUTE ACTION: Controller_Admin_FilePutOut::actionindex()
+2013-01-18T20:59:26+08:00 DEBUG: [DB EXECUTE] USE `openwan_db`
+2013-01-18T20:59:26+08:00 DEBUG: [DB EXECUTE] SET NAMES 'utf8'
+2013-01-18T20:59:26+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(files)
+2013-01-18T20:59:26+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(parent)
+2013-01-18T20:59:26+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(files)
+2013-01-18T20:59:26+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(parent)
+2013-01-18T20:59:26+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(children)
+2013-01-18T20:59:26+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(groups)
+2013-01-18T20:59:26+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(children)
+2013-01-18T20:59:26+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(groups)
+2013-01-18T20:59:26+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.*   FROM `openwan_db`.`ow_category`   WHERE ((`ow_category`.`id` = '1')) LIMIT 1
+2013-01-18T20:59:26+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.`id`   FROM `openwan_db`.`ow_category`   WHERE ((path like '%,1,%' and enabled=1) OR (id='1'))
+2013-01-18T20:59:26+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(category)
+2013-01-18T20:59:26+08:00 DEBUG: [DB EXECUTE] SELECT COUNT(*)   FROM `openwan_db`.`ow_files`   WHERE ((category_id in ('1','2','3','5','7','9','57','62','73','86','87','88','89','90','91','92','102','95','96','97','98','99','100') and type='3' and upload_username='admin' and status=1))
+2013-01-18T20:59:26+08:00 DEBUG: [DB EXECUTE] SELECT `ow_files`.*   FROM `openwan_db`.`ow_files`   WHERE ((category_id in ('1','2','3','5','7','9','57','62','73','86','87','88','89','90','91','92','102','95','96','97','98','99','100') and type='3' and upload_username='admin' and status=1))   ORDER BY `ow_files`.`upload_at` desc LIMIT 0, 12
+2013-01-18T20:59:26+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.*   FROM `openwan_db`.`ow_category`   WHERE ((enabled=1))   ORDER BY `ow_category`.`weight` desc
+2013-01-18T20:59:26+08:00 DEBUG: --- SHUTDOWN TIME --- 1358513966.1181 (0.079413890838623)sec
+2013-01-18T20:59:26+08:00 DEBUG: --- STARTUP TIME --- 1358513966.8068
+2013-01-18T20:59:26+08:00 DEBUG: MyApp::_initConfig
+2013-01-18T20:59:26+08:00 DEBUG: session_start()
+2013-01-18T20:59:26+08:00 DEBUG: session_id: qvpo4a4omc2k53fbtvecar6i01
+2013-01-18T20:59:26+08:00 DEBUG: REQUEST UDI: admin::fileputout/index@default
+2013-01-18T20:59:26+08:00 DEBUG: EXECUTE ACTION: Controller_Admin_FilePutOut::actionindex()
+2013-01-18T20:59:26+08:00 DEBUG: [DB EXECUTE] USE `openwan_db`
+2013-01-18T20:59:26+08:00 DEBUG: [DB EXECUTE] SET NAMES 'utf8'
+2013-01-18T20:59:26+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(files)
+2013-01-18T20:59:26+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(parent)
+2013-01-18T20:59:26+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(files)
+2013-01-18T20:59:26+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(parent)
+2013-01-18T20:59:26+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(children)
+2013-01-18T20:59:26+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(groups)
+2013-01-18T20:59:26+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(children)
+2013-01-18T20:59:26+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(groups)
+2013-01-18T20:59:26+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.*   FROM `openwan_db`.`ow_category`   WHERE ((`ow_category`.`id` = '1')) LIMIT 1
+2013-01-18T20:59:26+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.`id`   FROM `openwan_db`.`ow_category`   WHERE ((path like '%,1,%' and enabled=1) OR (id='1'))
+2013-01-18T20:59:26+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(category)
+2013-01-18T20:59:26+08:00 DEBUG: [DB EXECUTE] SELECT COUNT(*)   FROM `openwan_db`.`ow_files`   WHERE ((category_id in ('1','2','3','5','7','9','57','62','73','86','87','88','89','90','91','92','102','95','96','97','98','99','100') and type='2' and upload_username='admin' and status=1))
+2013-01-18T20:59:26+08:00 DEBUG: [DB EXECUTE] SELECT `ow_files`.*   FROM `openwan_db`.`ow_files`   WHERE ((category_id in ('1','2','3','5','7','9','57','62','73','86','87','88','89','90','91','92','102','95','96','97','98','99','100') and type='2' and upload_username='admin' and status=1))   ORDER BY `ow_files`.`upload_at` desc LIMIT 0, 12
+2013-01-18T20:59:26+08:00 DEBUG: [DB EXECUTE] SELECT `ow_category`.*   FROM `openwan_db`.`ow_category`   WHERE ((enabled=1))   ORDER BY `ow_category`.`weight` desc
+2013-01-18T20:59:26+08:00 DEBUG: --- SHUTDOWN TIME --- 1358513966.8742 (0.067376136779785)sec
+2013-01-18T20:59:27+08:00 DEBUG: --- STARTUP TIME --- 1358513967.7256
+2013-01-18T20:59:27+08:00 DEBUG: MyApp::_initConfig
+2013-01-18T20:59:27+08:00 DEBUG: session_start()
+2013-01-18T20:59:27+08:00 DEBUG: session_id: qvpo4a4omc2k53fbtvecar6i01
+2013-01-18T20:59:27+08:00 DEBUG: REQUEST UDI: admin::fileputout/putout@default
+2013-01-18T20:59:27+08:00 DEBUG: EXECUTE ACTION: Controller_Admin_FilePutOut::actionputout()
+2013-01-18T20:59:27+08:00 DEBUG: [DB EXECUTE] USE `openwan_db`
+2013-01-18T20:59:27+08:00 DEBUG: [DB EXECUTE] SET NAMES 'utf8'
+2013-01-18T20:59:27+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(category)
+2013-01-18T20:59:27+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(files)
+2013-01-18T20:59:27+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(parent)
+2013-01-18T20:59:27+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(children)
+2013-01-18T20:59:27+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(groups)
+2013-01-18T20:59:27+08:00 DEBUG: [DB EXECUTE] SELECT `ow_files`.*   FROM `openwan_db`.`ow_files`   WHERE ((`ow_files`.`id` = '49')) LIMIT 1
+2013-01-18T20:59:27+08:00 DEBUG: --- SHUTDOWN TIME --- 1358513967.7733 (0.047695159912109)sec
+2013-01-18T20:59:28+08:00 DEBUG: --- STARTUP TIME --- 1358513968.8069
+2013-01-18T20:59:28+08:00 DEBUG: MyApp::_initConfig
+2013-01-18T20:59:28+08:00 DEBUG: session_start()
+2013-01-18T20:59:28+08:00 DEBUG: session_id: qvpo4a4omc2k53fbtvecar6i01
+2013-01-18T20:59:28+08:00 DEBUG: REQUEST UDI: admin::filesearch/index@default
+2013-01-18T20:59:28+08:00 DEBUG: EXECUTE ACTION: Controller_Admin_FileSearch::actionindex()
+2013-01-18T20:59:29+08:00 DEBUG: --- SHUTDOWN TIME --- 1358513969.9372 (1.1302170753479)sec
+2013-01-18T20:59:29+08:00 DEBUG: --- STARTUP TIME --- 1358513969.5269
+2013-01-18T20:59:29+08:00 DEBUG: MyApp::_initConfig
+2013-01-18T20:59:29+08:00 DEBUG: session_start()
+2013-01-18T20:59:29+08:00 DEBUG: session_id: qvpo4a4omc2k53fbtvecar6i01
+2013-01-18T20:59:29+08:00 DEBUG: REQUEST UDI: admin::aclmanager/index@default
+2013-01-18T20:59:29+08:00 DEBUG: EXECUTE ACTION: Controller_Admin_AclManager::actionindex()
+2013-01-18T20:59:29+08:00 DEBUG: --- SHUTDOWN TIME --- 1358513969.9632 (0.43622589111328)sec
+2013-01-18T20:59:30+08:00 DEBUG: --- STARTUP TIME --- 1358513970.0231
+2013-01-18T20:59:30+08:00 DEBUG: MyApp::_initConfig
+2013-01-18T20:59:30+08:00 DEBUG: session_start()
+2013-01-18T20:59:30+08:00 DEBUG: session_id: qvpo4a4omc2k53fbtvecar6i01
+2013-01-18T20:59:30+08:00 DEBUG: REQUEST UDI: admin::aclmanager/useradd@default
+2013-01-18T20:59:30+08:00 DEBUG: EXECUTE ACTION: Controller_Admin_AclManager::actionuseradd()
+2013-01-18T20:59:30+08:00 DEBUG: [DB EXECUTE] USE `openwan_db`
+2013-01-18T20:59:30+08:00 DEBUG: [DB EXECUTE] SET NAMES 'utf8'
+2013-01-18T20:59:30+08:00 DEBUG: [DB EXECUTE] SHOW FULL COLUMNS FROM `openwan_db`.`ow_groups`
+2013-01-18T20:59:30+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(users)
+2013-01-18T20:59:30+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(roles)
+2013-01-18T20:59:30+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(categorys)
+2013-01-18T20:59:30+08:00 DEBUG: [DB EXECUTE] SELECT `ow_groups`.*   FROM `openwan_db`.`ow_groups`   WHERE ((enabled=1))   ORDER BY `ow_groups`.`weight` desc
+2013-01-18T20:59:30+08:00 DEBUG: [DB EXECUTE] SHOW FULL COLUMNS FROM `openwan_db`.`ow_levels`
+2013-01-18T20:59:30+08:00 DEBUG: QDB_ActiveRecord_Association_Abstract::__construct(users)
+2013-01-18T20:59:30+08:00 DEBUG: [DB EXECUTE] SELECT `ow_levels`.*   FROM `openwan_db`.`ow_levels`   WHERE ((enabled=1))   ORDER BY `ow_levels`.`weight` desc
+2013-01-18T20:59:30+08:00 DEBUG: --- SHUTDOWN TIME --- 1358513970.1341 (0.11101889610291)sec

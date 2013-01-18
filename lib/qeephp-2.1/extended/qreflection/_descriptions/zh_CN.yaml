@@ -1,0 +1,80 @@
+#
+# 所有 QeePHP 设置的描述文字
+#
+# zh_CN
+#
+
+runtime_session_provider: "要使用的 session 服务"
+runtime_session_start:    "是否自动打开 session"
+runtime_cache_dir:        "如果使用 QCache_File 缓存服务，必须指定该选项"
+runtime_cache_backend:    "默认使用的缓存服务"
+runtime_vendor_dirs:      "第三方库目录"
+runtime_response_header:  "是否自动输出 Content-Type: text/html; charset=_charset_"
+
+error_display:          "指示是否显示错误信息"
+error_display_friendly: "指示是否显示友好的错误信息"
+error_display_source:   "指示是否在错误信息中显示出错位置的源代码"
+error_language:         "错误信息的默认语言"
+assert_enabled:         "是否允许 QDebug:assert()"
+assert_warning:         "断言为 false 时，是否产生一个警告信息"
+assert_exception:       "断言为 false 时，是否抛出 QDebug_Assert_Failed 异常"
+
+dispatcher_controller_accessor: "指示控制器的 url 参数名"
+dispatcher_default_controller:  "默认控制器名"
+dispatcher_action_accessor:     "指示动作方法的 url 参数名"
+dispatcher_default_action:      "默认 动作方法名"
+dispatcher_namespace_accessor:  "指示命名空间的 url 参数名和默认命名空间"
+dispatcher_module_accessor:     "指示模块的 url 参数名和默认模块名"
+dispatcher_on_access_denied:    "当无权访问请求的动作时要调用的处理例程"
+dispatcher_on_action_not_found: "当请求的动作不存在时要调用的处理例程"
+dispatcher_url_mode:            "url 参数的传递模式，可以是 standard(标准)、pathinfo 和 rewrite(URL 重写) 三种之一"
+
+acl_default_act:    "指示当没有为控制器提供 ACT 时，要使用的默认 ACT"
+acl_global_act:     "全局 ACT，当没有指定 ACT 时则从全局 ACT 中查找指定控制器的 ACT"
+acl_session_key:    "指示 ACL 组件用什么键名在 session 中保存用户数据"
+acl_roles_key:      "指示 ACL 组件用什么键名在 session 中保存用户角色信息"
+
+db_log_enabled:         "数据库查询是否写入日志"
+db_default_dsn:         "数据库连接设置"
+db_meta_lifetime:       "数据表元数据缓存时间（秒）"
+db_meta_cached:         "指示是否缓存数据表的元数据"
+db_meta_cache_backend:  "缓存元数据使用的缓存服务"
+
+view_adapter:           "要使用的模板引擎"
+view_config:            "模板引擎要使用的配置信息"
+"view_config/view_dir": "视图文件所在目录，如果不指定则由框架自行决定"
+"view_config/view_layouts_dir": "布局视图文件所在目录，如果不指定则由框架自行决定"
+"view_config/flat_dir": "是否使用平面的目录结构布局"
+
+i18n_response_charset:  "指示 QeePHP 应用程序内部处理数据和输出内容要使用的编码"
+i18n_multi_languages:   "指示是否启用多语言支持"
+l10n_default_timezone:  "默认的时区设置"
+
+log_enabled:            "指示是否允许记录日志"
+log_priorities:         "指示记录哪些优先级的日志（不符合条件的会直接过滤）"
+log_cached:             "是否使用延迟的日志写入"
+log_cache_chunk_size:   "更小的缓存块可以节约内存，但写入日志的次数更频繁，性能更低。"
+log_writer_dir:         "保存日志文件的目录"
+log_writer_filename:    "日志文件的文件名"
+
+app_flash_message_key:  "应用程序用什么键名在 session 中保存闪现消息"
+
+
+
+RUN_MODE:               "应用程序的运行模式"
+APPID:                  "应用程序的 ID"
+QEEPHP_INST_DIR:        "应用程序定义的 QeePHP 安装目录"
+Q_VERSION:              "应用程序使用的 QeePHP 版本"
+Q_DIR:                  "应用程序使用的 QeePHP 所在目录"
+DS:                     "目录分隔符"
+CONFIG_CACHE_BACKEND:   "配置文件使用的缓存服务"
+CONFIG_CACHED:          "是否要缓存配置文件"
+CONFIG_CACHE_LIFETIME:  "配置文件缓存有效期"
+ROOT_DIR:               "应用程序所在目录"
+CURRENT_TIMESTAMP:      "当前的时间（秒）"
+CONFIG_CACHE_DIR:       "配置文件缓存目录"
+CONFIG_FILE_EXTNAME:    "配置文件的扩展名"
+
+
+
+

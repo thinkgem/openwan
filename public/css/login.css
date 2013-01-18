@@ -1,0 +1,19 @@
+@charset "utf-8";/* OpenWan CSS <thinkgem@163.com> */
+html,body {width: 100%;height: 100%;overflow:hidden;}
+body {color: #000;background-color: #fff;text-align: center;font-size: 12px;font-family: Verdana, Geneva, sans-serif;}
+a {color: #2366a8;text-decoration: underline;}
+a:hover {color: #e79d35;}
+.logintb {text-align: left;margin: 150px auto 0;width: 500px;}
+.login {width: 250px;height: 180px;background: url(../img/login_bg.gif) right center no-repeat;}
+.login h1 {text-indent: -9999px;margin-bottom: 10px;width: 201px;height: 53px;background: url(../img/logo.gif) no-repeat;}
+.login p {line-height:120%;}
+.logintitle {float:left;clear:left;width:60px;line-height:180%;font-weight:700;font-size:14px;color:#666;}
+.loginform {float: left;line-height: 180%;font-size: 14px;width: 160px;}
+.loginform .txt {margin-top:2px;width:160px;}
+.loginform select.txt {width: 166px;}
+.loginnofloat {clear:both;}
+.loginnofloat .btn {margin-left:62px;}
+.logintips {line-height: 160%;margin-left: 25px;}
+.logintips a {margin:0 5px;text-decoration:underline;}
+.copyright {position: static;margin-top: 120px;border: none;text-align: center;font-size: 12px;}
+.copyright p {display:inline;}

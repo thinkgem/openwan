@@ -1,0 +1,75 @@
+#主源定义
+source main
+{
+	type					= mysql
+	sql_host				= localhost
+	sql_user				= root
+	sql_pass				=
+	sql_db					= openwan_db
+	sql_port				= 3307
+	sql_query_pre			= SET NAMES utf8
+#	sql_query_pre			= REPLACE INTO cs_counter SELECT 1, MAX(id) FROM ow_files	
+	sql_query				= \
+		SELECT id,category_id,category_name,type,title,status,level,groups, \
+		UNIX_TIMESTAMP(putout_at) AS putout_at,catalog_info \
+		FROM ow_files WHERE status=2 #AND id<=(SELECT maxid FROM cs_counter WHERE id=1)
+	sql_attr_uint			= category_id		#从SQL读取到的值必须为整数
+	sql_attr_uint			= type
+	sql_attr_uint			= status
+	sql_attr_uint			= level
+	sql_attr_timestamp		= putout_at			#从SQL读取到的值必须为整数，作为时间属性
+	sql_query_info			= SELECT * FROM ow_files WHERE id=$id  #命令行查询时，从数据库读取原始数据信息
+#	sql_query_post_index 	= REPLACE INTO cs_counter (id, maxid) VALUES (1,$maxid)
+}
+
+#增量源定义
+source delta : main
+{
+	sql_query				= \
+		SELECT id,category_id,category_name,type,title,status,level,groups, \
+		UNIX_TIMESTAMP(putout_at) AS putout_at,catalog_info \
+		FROM ow_files WHERE status=2 AND id=(SELECT file_id FROM ow_files_counter WHERE id=1)#>(SELECT maxid FROM cs_counter WHERE id=1)
+}
+
+#主索引定义
+index main
+{
+	source				= main             			#对应的source名称
+	path				= @CSFTDIR@/var/data/main
+	docinfo				= extern
+	mlock				= 0
+	morphology			= none
+	min_word_len		= 1
+	html_strip			= 0
+	#charset_dictpath	= /usr/local/mmseg3/etc/	#BSD、Linux环境下设置，/符号结尾
+	charset_dictpath	= @CSFTDIR@/etc/			#Windows环境下设置，/符号结尾
+	charset_type		= zh_cn.utf-8
+}
+
+#增量索引定义
+index delta : main
+{
+	source				= delta
+	path				= @CSFTDIR@/var/data/delta
+}
+
+#全局索引定义
+indexer
+{
+	mem_limit			= 128M
+}
+
+#搜索服务定义
+searchd
+{
+    listen              = 3312
+	read_timeout		= 5
+	max_children		= 30
+	max_matches			= 1000
+	seamless_rotate		= 0
+	preopen_indexes		= 0
+	unlink_old			= 1
+	pid_file 			= @CSFTDIR@/var/log/searchd.pid
+	log 				= @CSFTDIR@/var/log/searchd.log
+	query_log 			= @CSFTDIR@/var/log/query.log
+}

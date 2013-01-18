@@ -1,0 +1,1 @@
+@php.exe run-ut %*

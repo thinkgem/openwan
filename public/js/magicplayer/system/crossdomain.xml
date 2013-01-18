@@ -1,0 +1,11 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE cross-domain-policy SYSTEM "http://www.macromedia.com/xml/dtds/cross-domain-policy.dtd">
+<!--
+	domain   限制访问域
+	to-ports 限制访问端口
+	secure   HTTPS 上允许 HTTP 的 SWF 加载数据为 false
+-->
+<cross-domain-policy>
+<allow-access-from domain="*" to-ports="*" secure="true" />
+<allow-http-request-headers-from domain="*" headers="*" />
+</cross-domain-policy>

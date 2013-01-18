@@ -1,0 +1,45 @@
+# <?php die(); //$Id: category_form.yaml 895 2010-03-23 05:36:29Z thinkgem $ ?>
+
+~form:
+  id: category_form
+  name: category_form
+  method: post
+
+name:
+  _ui: "textbox"
+  _label: "名称"
+  _filters: "trim"
+  _req: true
+  _tips: "分类的名称"
+  maxlength: 64
+  class: "txt"
+
+weight:
+  _ui: "textbox"
+  _filters: "intval"
+  _label: "权重"
+  _req: true
+  _tips: "值越大排序越靠前"
+  maxlength: 64
+  class: "txt"
+
+enabled:
+  _ui: radiogroup
+  _filters: "intval"
+  _label: "可用性"
+  _tips: "指示该分类是否可用"
+  class: "radio"
+  items:
+    1: "可用"
+    0: "不可用"
+  value: 1
+  caption_class: "inline"
+
+description:
+  _ui: "memo"
+  _label: "描述"
+  _tips: "说明信息"
+  maxlength: 255
+  cols: 23
+  rows: 4
+  class: "txt"

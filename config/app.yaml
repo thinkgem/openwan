@@ -1,0 +1,172 @@
+# <?php die(); // $Id: app.yaml 908 2010-08-17 05:55:24Z thinkgem $ ?>
+
+## 注意：书写时，缩进不能使用 Tab，必须使用空格
+
+#############################
+# 应用程序设置
+#############################
+
+# 在这里添加应用程序需要的设置
+# 这里的设置可以用 Q::ini('appini/设置名') 来读取，例如 Q::ini('appini/app_title');
+
+# 站点参数
+site:
+  title: "OpenWan 媒资管理系统"
+
+# 上传参数
+upload:
+  filePath: "%ROOT_DIR%\data"
+  fileSizeLimit: "100 MB"
+  videoFileTypes: "*.mpeg;*.mpg;*.mp4;*.avi;*.dat;*.vob;*.mov;*.rm;*.rmvb;*.flv;*.mxf;*.wmv;*.asf;*.swf;*.rt;"
+  audioFileTypes: "*.wav;*.wma;*.mp3;"
+  imageFileTypes: "*.jpeg;*.jpg;*.gif;*.cr2;*.nef;*.tiff;*.jpeg;*.bmp;*.png;"
+  richFileTypes: "*.txt;*.rtf;*.asci;*.ascii;*.wml;*.smi;*.asx;*.lrc;*.doc;*.docx;*.wps;*.pm;*.ppt;*.pptx;*.ag;*.cdr;*.xls;*.xlsx;*.csv;*.rar;*.zip;*.7z;*.gz;*.gz2;*.hqx;*.tar;*.arj;*.dwg;*.ppm;*.vsd;*.pdf;*.pst;*.eml;*.xml;*.html;*.htm;*.db;*.mdb;*.accdb;*.iso;*.chm;"
+  fileTypesDescription: "所有支持的文件"
+
+catalog:
+  fileInfoExt: "inf"
+  ffmpegPath: "%ROOT_DIR%\lib\ffmpeg\ffmpeg.exe"
+  ffmpagParameter: "-y -ab 56 -ar 22050 -r 15 -s 320x240"
+ 
+search:
+  sphinxApi: "%ROOT_DIR%\lib\sphinx\sphinxapi.php"
+  sphinxHost: "localhost"
+  sphinxPort: 3312
+  sphinxLimit: 4
+  # 增量更新索引脚本
+  sphinxDelta: "%ROOT_DIR%\csft\bin\indexer.exe --config %ROOT_DIR%\csft\etc\csft.conf delta --rotate && %ROOT_DIR%\csft\bin\indexer.exe --config %ROOT_DIR%\csft\etc\csft.conf --merge main delta --merge-dst-range deleted 0 0 --rotate"
+  
+# 导航
+nav:
+  # 顶部导航
+  top:
+    -
+      title: "素材上载"
+      udi: "admin::fileUpload"
+    -
+      title: "媒资编目"
+      udi: "admin::fileCatalog"
+    -
+      title: "审核发布"
+      udi: "admin::filePutOut"
+    -
+      title: "检索下载"
+      udi: "admin::fileSearch"
+    -
+      title: "访问控制"
+      udi: "admin::aclManager"
+    -
+      title: "字典管理"
+      udi: "admin::dictManager"
+    -
+      title: "数据管理"
+      udi: "admin::dataManager"
+    -
+      title: "个人中心"
+      udi: "admin::userCenter"
+  # 左侧导航
+  left:
+    # 素材管理
+    fileCatalog:
+      -
+        title: "视频编目"
+        udi: "admin::fileCatalog/index"
+        args: "type/1"
+      -
+        title: "音频编目"
+        udi: "admin::fileCatalog/index"
+        args: "type/2"
+      -
+        title: "图片编目"
+        udi: "admin::fileCatalog/index"
+        args: "type/3"
+      -
+        title: "富媒体编目"
+        udi: "admin::fileCatalog/index"
+        args: "type/4"
+    # 素材审核发布
+    filePutout:
+      -
+        title: "视频审核发布"
+        udi: "admin::filePutout/index"
+        args: "type/1"
+      -
+        title: "音频审核发布"
+        udi: "admin::filePutout/index"
+        args: "type/2"
+      -
+        title: "图片审核发布"
+        udi: "admin::filePutout/index"
+        args: "type/3"
+      -
+        title: "富媒体审核发布"
+        udi: "admin::filePutout/index"
+        args: "type/4"
+    # 素材检索下载
+    fileSearch:
+      -
+        title: "全部资料"
+        udi: "admin::fileSearch/index"
+        args: "type/0"
+      -
+        title: "视频资料"
+        udi: "admin::fileSearch/index"
+        args: "type/1"
+      -
+        title: "音频资料"
+        udi: "admin::fileSearch/index"
+        args: "type/2"
+      -
+        title: "图片资料"
+        udi: "admin::fileSearch/index"
+        args: "type/3"
+      -
+        title: "富媒体资料"
+        udi: "admin::fileSearch/index"
+        args: "type/4"
+    # 用户中心
+    userCenter:
+      -
+        title: "个人资料"
+        udi: "admin::userCenter/changeInfo"
+      -
+        title: "修改密码"
+        udi: "admin::userCenter/changePassword"
+    # 访问控制
+    aclManager:
+      -
+        title: "添加用户"
+        udi: "admin::aclManager/userAdd"
+      -
+        title: "用户管理"
+        udi: "admin::aclManager/user"
+      -
+        title: "用户组管理"
+        udi: "admin::aclManager/group"
+      -
+        title: "角色管理"
+        udi: "admin::aclManager/role"
+      -
+        title: "权限管理"
+        udi: "admin::aclManager/permission"
+      -
+        title: "浏览等级管理"
+        udi: "admin::aclManager/level"
+    # 字典管理
+    dictManager:
+      -
+        title: "资源库分类表"
+        udi: "admin::dictManager/category"
+      -
+        title: "编目信息表"
+        udi: "admin::dictManager/catalog"
+    # 数据迁移
+    dataManager:
+      -
+        title: "数据迁移"
+        udi: "admin::dataManager/migration"
+  # 底部导航
+  bottom:
+    -
+      title: "关于我们"
+      udi: "default::about"

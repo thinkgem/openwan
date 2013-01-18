@@ -1,0 +1,32 @@
+
+userinfo:
+  _elements:
+    username:
+      _ui: "textbox"
+      _filters: "trim, strtolower"
+      _validations:
+        - ["min_length", 5,  "username expected length >= 5"]
+        - ["max_length", 15, "username expected length <= 15"]
+      maxlength: 15
+    #
+    password:
+      _ui: "password"
+      _validations:
+        - ["min_length", 6,  "password expected length >= 6"]
+        - ["max_length", 20, "password expected length <= 20"]
+      maxlength: 20
+ 
+profile:
+  _elements:
+    address:
+      _ui: "textbox"
+      _validations:
+        - ["not_empty", "address not empty"]
+      maxlength: 80
+    #
+    postcode:
+      _ui: "textbox"
+      _validations:
+        - ["regex", "/[0-9]+/", "postcode is number"]
+      maxlength: 6
+

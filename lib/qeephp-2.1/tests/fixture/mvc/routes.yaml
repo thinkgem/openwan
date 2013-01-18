@@ -1,0 +1,1026 @@
+# 用于 Router 单元测试的路由规则和验证参数
+
+# 基于正则的路由规则
+#
+# 例如:
+# http://www.example.com/contents-live-12423.html
+#
+# 这个 url 映射到 cms 模块的 contents 控制器的 view 方法。
+# live 映射为 category 参数，而 12423 映射为 id 参数，最后的 html 映射为 format 参数。
+#
+# 路由规则为：
+# contents:
+#   regex: contents\-([a-z0-9]+)\-([0-9]+)(\.html)?
+#   config:
+#     1: category
+#     2: id
+#     3: format
+#   defaults:
+#     module: cms
+#     controller: contents
+#     action: view
+#     format: .html
+#
+# 路由规则使用了正则表达式，可以匹配任意形式的 url。
+#
+
+calendar:
+  regex: '/calendar/([a-z0-9]+)'
+  config:
+    username: 1
+  defaults:
+    controller: calendar
+    action: index
+  tests_url:
+    -
+      _path: '/calendar/dualface'
+      controller: calendar
+      action: index
+      username: dualface
+    -
+      _path: '/calendar/007'
+      controller: calendar
+      action: index
+      username: '007'
+    -
+      _path: '/calendar/xxx9527'
+      controller: calendar
+      action: index
+      username: 'xxx9527'
+  tests_args:
+    -
+      _path: '/calendar/dualface'
+      controller: calendar
+      action: index
+      username: dualface
+    -
+      _path: '/calendar/007'
+      controller: calendar
+      action: index
+      username: '007'
+    -
+      _path: '/calendar/xxx9527'
+      controller: calendar
+      action: index
+      username: 'xxx9527'
+
+forum_threads:
+  regex: '/thread\-([0-9]+)\-([0-9]+)\.html'
+  config:
+    fid: 1
+    tid: 2
+  defaults:
+    controller: threads
+    action: show
+
+  tests_url:
+    -
+      _path: '/thread-22-512.html'
+      controller: threads
+      action: show
+      fid: 22
+      tid: 512
+    -
+      _path: '/thread-5-11.html'
+      controller: threads
+      action: show
+      fid: 5
+      tid: 11
+
+  tests_args:
+    -
+      _path: '/thread-22-512.html'
+      controller: threads
+      action: show
+      fid: 22
+      tid: 512
+    -
+      _path: '/thread-5-11.html'
+      controller: threads
+      action: show
+      fid: 5
+      tid: 11
+
+wiki_page:
+  regex: '/wiki/(.+)\.(xml|html|json|pdf)'
+  config:
+    page: 1
+    format: 2
+  defaults:
+    controller: wiki
+    action: show
+
+  tests_url:
+    -
+      _path: '/wiki/Python/1362-python-39-s-descriptor.html'
+      controller: wiki
+      action: show
+      page: 'Python/1362-python-39-s-descriptor'
+      format: html
+    -
+      _path: '/wiki/Python/1362-python-39-s-descriptor.xml'
+      controller: wiki
+      action: show
+      page: 'Python/1362-python-39-s-descriptor'
+      format: xml
+    -
+      _path: '/wiki/PHP-23542-descriptor.pdf'
+      controller: wiki
+      action: show
+      page: 'PHP-23542-descriptor'
+      format: pdf
+    -
+      _path: '/wiki/PHP-23542-descriptor.json'
+      controller: wiki
+      action: show
+      page: 'PHP-23542-descriptor'
+      format: json
+
+  tests_args:
+    -
+      _path: '/wiki/Python/1362-python-39-s-descriptor.html'
+      controller: wiki
+      action: show
+      page: 'Python/1362-python-39-s-descriptor'
+      format: html
+    -
+      _path: '/wiki/Python/1362-python-39-s-descriptor.xml'
+      controller: wiki
+      action: show
+      page: 'Python/1362-python-39-s-descriptor'
+      format: xml
+    -
+      _path: '/wiki/PHP-23542-descriptor.pdf'
+      controller: wiki
+      action: show
+      page: 'PHP-23542-descriptor'
+      format: pdf
+    -
+      _path: '/wiki/PHP-23542-descriptor.json'
+      controller: wiki
+      action: show
+      page: 'PHP-23542-descriptor'
+      format: json
+
+
+ask_page:
+  regex: '/ask/([a-z]+)\-(\d+)\.html'
+  config:
+    category: 1
+    id: 2
+  defaults:
+    controller: ask
+    action: show
+
+  tests_url:
+    -
+      _path: '/ask/php-51.html'
+      controller: ask
+      action: show
+      category: php
+      id: 51
+    -
+      _path: '/ask/ajax-5523.html'
+      controller: ask
+      action: show
+      category: ajax
+      id: 5523
+
+  tests_args:
+    -
+      _path: '/ask/php-51.html'
+      controller: ask
+      action: show
+      category: php
+      id: 51
+    -
+      _path: '/ask/ajax-5523.html'
+      controller: ask
+      action: show
+      category: ajax
+      id: 5523
+
+
+announment:
+  regex: '/announment/([a-z][0-9a-z_]+)/([0-9]+)\.(html|json|pdf)'
+  config:
+    action: 1
+    announment_id: 2
+    format: 3
+  defaults:
+    controller: announment
+    action: index
+    format: html
+
+  tests_url:
+    -
+      _path: '/announment/show/333.html'
+      controller: announment
+      action: show
+      format: html
+      announment_id: 333
+    -
+      _path: '/announment/edit/512.json'
+      controller: announment
+      action: edit
+      format: json
+      announment_id: 512
+    -
+      _path: '/announment/print_now/087.pdf'
+      controller: announment
+      action: print_now
+      format: pdf
+      announment_id: '087'
+
+  tests_args:
+    -
+      _path: '/announment/show/333.html'
+      controller: announment
+      action: show
+      format: html
+      announment_id: 333
+    -
+      _path: '/announment/edit/512.json'
+      controller: announment
+      action: edit
+      format: json
+      announment_id: 512
+    -
+      _path: '/announment/print_now/087.pdf'
+      controller: announment
+      action: print_now
+      format: pdf
+      announment_id: '087'
+
+
+
+# 简单的路由规则
+#
+# 例如:
+# http://www.example.com/posts/view/23
+#
+# 这个 url 映射到 posts 控制器的 view 方法，最后的 23 则映射为 id 参数。
+#
+# 路由规则为：
+# posts_view:
+#   pattern: /posts/view/:id
+#   config:
+#     id: [0-9]+
+#   defaults:
+#     controller: posts
+#     action: view
+#
+
+
+conferences_index:
+  pattern: '/[conferences]/[page]/:page'
+  config:
+    page: '\d+'
+  defaults:
+    controller: conferences
+    action: index
+    page: 1
+  tests_url:
+    -
+      _path: '/'
+      controller: conferences
+      action: index
+      page: 1
+    -
+      _path: '/conferences'
+      controller: conferences
+      action: index
+      page: 1
+    -
+      _path: '/conferences/page'
+      controller: conferences
+      action: index
+      page: 1
+    -
+      _path: '/conferences/page/1'
+      controller: conferences
+      action: index
+      page: 1
+    -
+      _path: '/conferences/page/33'
+      controller: conferences
+      action: index
+      page: 33
+  tests_args:
+    -
+      _path: '/'
+      controller: conferences
+      action: index
+      page: 1
+    -
+      _path: '/'
+      controller: conferences
+      action: index
+      page: 1
+    -
+      _path: '/'
+      controller: conferences
+      action: index
+      page: 1
+    -
+      _path: '/'
+      controller: conferences
+      action: index
+      page: 1
+    -
+      _path: '/conferences/page/33'
+      controller: conferences
+      action: index
+      page: 33
+
+all_office:
+  pattern: '/office/:page'
+  config:
+    page: '\d+'
+  defaults:
+    controller: office
+    action: index
+    page: 1
+  tests_url:
+    -
+      _path: '/office'
+      controller: office
+      action: index
+      page: 1
+    -
+      _path: '/office/3'
+      controller: office
+      action: index
+      page: 3
+    -
+      _path: '/office/982'
+      controller: office
+      action: index
+      page: 982
+  tests_args:
+    -
+      _path: '/office'
+      controller: office
+    -
+      _path: '/office/45'
+      controller: office
+      page: 45
+    -
+      _path: '/office/33'
+      action: index
+      controller: office
+      page: 33
+
+office:
+  pattern: '/office/:office'
+  config:
+    office: '[a-z0-9_]+'
+  defaults:
+    controller: office
+    action: show
+  tests_url:
+    -
+      _path: '/office/dev'
+      controller: office
+      action: show
+      office: dev
+    -
+      _path: '/office/q_a'
+      controller: office
+      action: show
+      office: q_a
+    -
+      _path: '/office/marketing091'
+      controller: office
+      action: show
+      office: marketing091
+  tests_args:
+    -
+      _path: '/office/ppt'
+      controller: office
+      action: show
+      office: ppt
+    -
+      _path: '/office/marketing091'
+      controller: office
+      action: show
+      office: marketing091
+    -
+      _path: '/office/q_a'
+      office: q_a
+      controller: office
+      action: show
+
+blog:
+  pattern: '/blog/:username/[page]/:page'
+  config:
+    username: '[a-z0-9_]+'
+    page: '\d+'
+  defaults:
+    module: blog
+    controller: posts
+    action: index
+    page: 1
+  tests_url:
+    -
+      _path: '/blog/dualface'
+      module: blog
+      controller: posts
+      action: index
+      username: dualface
+      page: 1
+    -
+      _path: '/blog/dualface/page/5'
+      module: blog
+      controller: posts
+      action: index
+      username: dualface
+      page: 5
+    -
+      _path: '/blog/dualface/page/33'
+      module: blog
+      controller: posts
+      action: index
+      username: dualface
+      page: 33
+    -
+      _path: '/blog/isno912'
+      module: blog
+      controller: posts
+      action: index
+      username: isno912
+      page: 1
+    -
+      _path: '/blog/55yes/page/5'
+      module: blog
+      controller: posts
+      action: index
+      username: 55yes
+      page: 5
+  tests_args:
+    -
+      _path: '/blog/dualface'
+      username: dualface
+      module: blog
+      controller: posts
+    -
+      _path: '/blog/dualface'
+      username: dualface
+      module: blog
+      controller: posts
+      page: 1
+    -
+      _path: '/blog/dualface/page/23'
+      username: dualface
+      module: blog
+      controller: posts
+      page: 23
+    -
+      _path: '/blog/isno912/page/503'
+      module: blog
+      page: 503
+      username: isno912
+      action: index
+      controller: posts
+
+blog_post:
+  pattern: '/blog/:username/:title'
+  config:
+    username: '[a-z0-9_]+'
+    title: '.+(\.[a-z0-9]+)*'
+  defaults:
+    module: blog
+    controller: posts
+    action: show
+  tests_url:
+    -
+      _path: '/blog/dualface/show_me_the_money'
+      module: blog
+      controller: posts
+      action: show
+      username: dualface
+      title: show_me_the_money
+    -
+      _path: '/blog/dualface/show_me_the_money.html'
+      module: blog
+      controller: posts
+      action: show
+      username: dualface
+      title: show_me_the_money.html
+    -
+      _path: '/blog/dualface/show_me_the_money.xml'
+      module: blog
+      controller: posts
+      action: show
+      username: dualface
+      title: show_me_the_money.xml
+    -
+      _path: '/blog/dualface/show_me_the_money.tar.gz'
+      module: blog
+      controller: posts
+      action: show
+      username: dualface
+      title: show_me_the_money.tar.gz
+    -
+      _path: '/blog/dualface/show me the money'
+      module: blog
+      controller: posts
+      action: show
+      username: dualface
+      title: 'show me the money'
+    -
+      _path: '/blog/55yes/使用 VIM 作为 PHP 开发工具.html'
+      module: blog
+      controller: posts
+      action: show
+      username: 55yes
+      title: '使用 VIM 作为 PHP 开发工具.html'
+  tests_args:
+    -
+      _path: '/blog/dualface/show_me_the_money'
+      action: show
+      username: dualface
+      title: show_me_the_money
+      module: blog
+      controller: posts
+    -
+      _path: '/blog/dualface/show_me_the_money.html'
+      username: dualface
+      title: show_me_the_money.html
+      module: blog
+      controller: posts
+      action: show
+    -
+      _path: '/blog/dualface/show_me_the_money.xml'
+      username: dualface
+      title: show_me_the_money.xml
+      module: blog
+      controller: posts
+      action: show
+    -
+      _path: '/blog/dualface/show_me_the_money.tar.gz'
+      module: blog
+      controller: posts
+      action: show
+      username: dualface
+      title: show_me_the_money.tar.gz
+    -
+      _path: '/blog/dualface/show%20me%20the%20money'
+      module: blog
+      controller: posts
+      action: show
+      username: dualface
+      title: 'show me the money'
+    -
+      _path: '/blog/55yes/%E4%BD%BF%E7%94%A8%20VIM.html'
+      module: blog
+      controller: posts
+      action: show
+      username: 55yes
+      title: '使用 VIM.html'
+
+posts:
+  pattern: '/posts/:action/*'
+  defaults:
+    controller: posts
+    action: index
+  tests_url:
+    -
+      _path: '/posts/edit'
+      controller: posts
+      action: edit
+    -
+      _path: '/posts/index'
+      controller: posts
+      action: index
+    -
+      _path: '/posts/list/page/2'
+      controller: posts
+      action: list
+      page: 2
+    -
+      _path: '/posts/show/id/0'
+      controller: posts
+      action: show
+      id: 0
+    -
+      _path: '/posts/show/id/0/section/0'
+      controller: posts
+      action: show
+      id: 0
+      section: 0
+  tests_args:
+    -
+      _path: '/posts/edit'
+      controller: posts
+      action: edit
+    -
+      _path: '/posts'
+      controller: posts
+      action: index
+    -
+      _path: '/posts/list/page/2'
+      controller: posts
+      action: list
+      page: 2
+    -
+      _path: '/posts/show/id/0'
+      controller: posts
+      action: show
+      id: 0
+    -
+      _path: '/posts/show/id/0/section/0'
+      controller: posts
+      action: show
+      id: 0
+      section: 0
+
+blog_home:
+  pattern: '/blog'
+  defaults:
+    module: blog
+    controller: blogs
+    action: index
+  tests_url:
+    -
+      _path: '/blog'
+      module: blog
+      controller: blogs
+      action: index
+    -
+      _path: '/blog/'
+      module: blog
+      controller: blogs
+      action: index
+  tests_args:
+    -
+      _path: '/blog'
+      module: blog
+      controller: blogs
+    -
+      _path: '/blog'
+      module: blog
+      controller: blogs
+      action: index
+
+userhome:
+  pattern: '/user/:username'
+  config:
+    username: '[a-z0-9_]+'
+  defaults:
+    controller: users
+    action: show
+  tests_url:
+    -
+      _path: '/user/dualface'
+      controller: users
+      action: show
+      username: dualface
+    -
+      _path: '/user/55yes'
+      controller: users
+      action: show
+      username: 55yes
+    -
+      _path: '/user/isno912'
+      controller: users
+      action: show
+      username: isno912
+  tests_args:
+    -
+      _path: '/user/dualface'
+      controller: users
+      username: dualface
+      action: show
+    -
+      _path: '/user/55yes'
+      controller: users
+      action: show
+      username: 55yes
+    -
+      _path: '/user/isno912'
+      controller: users
+      action: show
+      username: isno912
+
+album:
+  pattern: '/album/:username/:album'
+  config:
+    username: '[a-z0-9_]+'
+    album: '.+'
+  defaults:
+    module: album
+    controller: album
+    action: show
+  tests_url:
+    -
+      _path: '/album/dualface/travel'
+      module: album
+      controller: album
+      action: show
+      username: dualface
+      album: travel
+    -
+      _path: '/album/55yes/我爱湘江'
+      module: album
+      controller: album
+      action: show
+      username: 55yes
+      album: '我爱湘江'
+  tests_args:
+    -
+      _path: '/album/dualface/travel'
+      username: dualface
+      album: travel
+      module: album
+      controller: album
+      action: show
+    -
+      _path: '/album/55yes/%E6%88%91%E7%88%B1%E6%B9%98%E6%B1%9F'
+      action: show
+      username: 55yes
+      module: album
+      controller: album
+      album: '我爱湘江'
+
+admin:
+  pattern: '/admin/:controller/:action/?'
+  defaults:
+    module: admin
+    controller: default
+    action: index
+  tests_url:
+    -
+      _path: '/admin/posts/index/page/2'
+      module: admin
+      controller: posts
+      action: index
+      page: 2
+    -
+      _path: '/admin/posts/index'
+      module: admin
+      controller: posts
+      action: index
+    -
+      _path: '/admin/posts'
+      module: admin
+      controller: posts
+      action: index
+    -
+      _path: '/admin'
+      module: admin
+      controller: default
+      action: index
+    -
+      _path: '/admin/'
+      module: admin
+      controller: default
+      action: index
+    -
+      _path: '/admin/dashboard/index'
+      module: admin
+      controller: dashboard
+      action: index
+    -
+      _path: 'admin'
+      module: admin
+      controller: default
+      action: index
+    -
+      _path: 'admin/'
+      module: admin
+      controller: default
+      action: index
+    -
+      _path: 'admin/posts/index/sort/created'
+      module: admin
+      controller: posts
+      action: index
+      sort: created
+    -
+      _path: 'admin/dashboard/index'
+      module: admin
+      controller: dashboard
+      action: index
+  tests_args:
+    -
+      _path: '/admin'
+      module: admin
+    -
+      _path: '/admin'
+      module: admin
+      controller: default
+      action: index
+    -
+      _path: '/admin/dashboard'
+      module: admin
+      controller: dashboard
+      action: index
+    -
+      _path: '/admin/posts?page=2'
+      module: admin
+      controller: posts
+      page: 2
+    -
+      _path: '/admin/posts?page=2&keyword=php'
+      module: admin
+      controller: posts
+      action: index
+      page: 2
+      keyword: 'php'
+    -
+      _path: '/admin?page=2'
+      module: admin
+      page: 2
+    -
+      _path: '/admin/default/show?id=3'
+      module: admin
+      controller: default
+      action: show
+      id: 3
+
+shop:
+  pattern: '/shop/:controller/:action/?'
+  defaults:
+    namespace: shop
+    controller: default
+    action: index
+  tests_url:
+    -
+      _path: '/shop'
+      namespace: shop
+      controller: default
+      action: index
+    -
+      _path: '/shop/posts'
+      namespace: shop
+      controller: posts
+      action: index
+    -
+      _path: '/shop/posts/list'
+      namespace: shop
+      controller: posts
+      action: list
+    -
+      _path: '/shop/default/view'
+      namespace: shop
+      controller: default
+      action: view
+  tests_args:
+    -
+      _path: '/shop'
+      namespace: shop
+      controller: default
+    -
+      _path: '/shop'
+      namespace: shop
+      action: index
+    -
+      _path: '/shop'
+      namespace: shop
+    -
+      _path: '/shop/posts'
+      namespace: shop
+      controller: posts
+    -
+      _path: '/shop/posts'
+      namespace: shop
+      controller: posts
+      action: index
+    -
+      _path: '/shop/posts/edit'
+      namespace: shop
+      controller: posts
+      action: edit
+    -
+      _path: '/shop/posts/view?id=3'
+      namespace: shop
+      controller: posts
+      action: view
+      id: 3
+
+backend:
+  pattern: '/backend/:controller/:action/?'
+  defaults:
+    module: admin2
+    controller: default
+    action: index
+  tests_url:
+    -
+      _path: '/backend/posts/index/page/2'
+      module: admin2
+      controller: posts
+      action: index
+      page: 2
+    -
+      _path: '/backend/posts/index'
+      module: admin2
+      controller: posts
+      action: index
+    -
+      _path: '/backend/posts'
+      module: admin2
+      controller: posts
+      action: index
+    -
+      _path: '/backend'
+      module: admin2
+      controller: default
+      action: index
+    -
+      _path: '/backend/'
+      module: admin2
+      controller: default
+      action: index
+  tests_args:
+    -
+      _path: '/backend'
+      module: admin2
+    -
+      _path: '/backend/posts'
+      module: admin2
+      controller: posts
+    -
+      _path: '/backend/posts'
+      module: admin2
+      controller: posts
+      action: index
+    -
+      _path: '/backend/posts/test?page=2&sort=created'
+      module: admin2
+      controller: posts
+      action: test
+      page: 2
+      sort: created
+
+_default_:
+  pattern: '/:controller/:action/*'
+  defaults:
+    controller: default
+    action: index
+  tests_url:
+    -
+      _path: '/cars/index'
+      controller: cars
+      action: index
+    -
+      _path: '/cars'
+      controller: cars
+      action: index
+    -
+      _path: '/cars/index/page/1'
+      controller: cars
+      action: index
+      page: 1
+    -
+      _path: '/cars/search/keyword/litte'
+      controller: cars
+      action: search
+      keyword: litte
+    -
+      _path: '/cars/recents/page'
+      controller: cars
+      action: recents
+      page: ''
+  tests_args:
+    -
+      _path: '/'
+      controller: default
+    -
+      _path: '/'
+      action: index
+    -
+      _path: '/'
+      controller: default
+      action: index
+    -
+      _path: '/default/last'
+      controller: default
+      action: last
+    -
+      _path: '/default/yeah'
+      action: yeah
+    -
+      _path: '/cars'
+      controller: cars
+      action: index
+    -
+      _path: '/cars'
+      controller: cars
+      action: index
+    -
+      _path: '/cars/index/page/1'
+      controller: cars
+      action: index
+      page: 1
+    -
+      _path: '/cars/search/keyword/litte'
+      controller: cars
+      action: search
+      keyword: litte
+    -
+      _path: '/cars/recents/page'
+      controller: cars
+      action: recents
+      page: ''
+

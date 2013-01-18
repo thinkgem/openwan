@@ -1,0 +1,179 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Weebox教程一</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../bgiframe.js"></script>
+<script type="text/javascript" src="../weebox.js"></script>
+<link type="text/css" rel="stylesheet" href="../weebox.css" />
+</head>
+<body>
+
+<h1>直接显示内容<input type="button" id="test1" value="演示[id=test1]"></h1>
+<pre>
+$("#test1").click(function(){
+	$.weeboxs.open('这是直接显示的内容', {title: 'Hello World'});
+});
+</pre>
+<img alt="" src="demo1.jpg">
+<script type="text/javascript">
+$("#test1").click(function(){
+	$.weeboxs.open('这是直接显示的内容', {title: 'Hello World'});
+});
+</script>
+<hr>
+
+<h1>弹窗的Alter类型<input type="button" id="test2" value="演示[id=test2]"></h1>
+<pre>
+$("#test2").click(function(){
+	$.weeboxs.open('Sorry,这个操作不允许!', {title:'提示', type:'alert'});
+});
+</pre>
+<img alt="" src="demo2.jpg">
+<script type="text/javascript">
+$("#test2").click(function(){
+	$.weeboxs.open('Sorry,这个操作不允许!', {title: '提示', type:'alert'});
+});
+</script>
+<hr>
+
+<h1>打开、确定、取消、关闭的事件<input type="button" id="test3" value="演示[id=test3]"></h1>
+<pre>
+$("#test3").click(function(){
+	$.weeboxs.open('弹窗事件测试？', {
+		title:'提示',
+		onopen:function() {
+			alert('取得内容后，显示弹窗前。');
+		},
+		onok:function(){
+			alert('点击确定按钮后!');
+			box.close();//增加事件方法后需手动关闭弹窗
+		},
+		oncancel:function(){
+			alert('点击取消按钮后！');
+			box.close();//增加事件方法后需手动关闭弹窗
+		},
+		onclose:function(){
+			alert('弹窗关闭前');
+		}
+	});
+});
+</pre>
+<img alt="" src="demo3.jpg">
+<script type="text/javascript">
+$("#test3").click(function(){
+	$.weeboxs.open('弹窗事件测试？', {
+		title:'提示',
+		onopen:function(box) {
+			alert('取得内容后，显示弹窗前。');
+		},
+		onok:function(box){
+			alert('点击确定按钮后!');
+			box.close();//增加事件方法后需手动关闭弹窗
+		},
+		oncancel:function(box){
+			alert('点击取消按钮后！');
+			box.close();//增加事件方法后需手动关闭弹窗
+		},
+		onclose:function(box){
+			alert('弹窗关闭前');
+		}
+	});
+});
+</script>
+<hr>
+
+<h1>使用jQuery的选择器为弹窗提供内容<input type="button" id="test4" value="演示[id=test4]"><input type="button" id="test5" value="演示[id=test5]"></h1>
+<pre>
+$("#test4").click(function(){
+	$.weeboxs.open('#boxcontent', {title:'提示'});
+});
+&lt;div style="display:none" id="boxcontent"&gt;ID方式取元素里的内容&lt;/div&gt;
+
+
+$("#test5").click(function(){
+	$.weeboxs.open('.boxcontent', {title:'提示',contentType:'selector'});
+});
+&lt;div style="display:none" class="boxcontent"&gt;Class方式元素里的内容&lt;/div&gt;
+</pre>
+<img alt="" src="demo4.jpg">
+<script type="text/javascript">
+$("#test4").click(function(){
+	$.weeboxs.open('#boxcontent', {title:'提示'});
+});
+$("#test5").click(function(){
+	$.weeboxs.open('.boxcontent', {title:'提示',contentType:'selector'});
+});
+</script>
+<div style="display:none" id="boxcontent">ID方式取元素里的内容</div>
+<div style="display:none" class="boxcontent">Class方式元素里的内容</div>
+<hr>
+
+<h1>使用Ajax的方式为弹窗提供内容<input type="button" id="test6" value="演示[id=test6]"></h1>
+<pre>
+$("#test6").click(function(){
+	$.weeboxs.open('ajax.html', {title:'AJAX得到服务器上的内容', contentType:'ajax'});
+});
+</pre>
+<img alt="" src="demo6.jpg">
+<script type="text/javascript">
+$("#test6").click(function(){
+	$.weeboxs.open('ajax1.html', {title:'AJAX得到服务器上的内容', contentType:'ajax',width:400});
+});
+</script>
+<hr>
+
+<h1>设置弹窗的宽度和高度<input type="button" id="test7" value="演示[id=test7]"></h1>
+<pre>
+$("#test7").click(function(){
+	$.weeboxs.open('ajax2.html', {title:'设置弹窗的宽度和高度', contentType:'ajax', width:600, height:300});
+	//dialog默认宽度为300,高度是自适应的
+});
+</pre>
+<img alt="" src="demo7.jpg">
+<script type="text/javascript">
+$("#test7").click(function(){
+	$.weeboxs.open('ajax2.html', {title:'设置弹窗的宽度和高度', contentType:'ajax', width:600, height:300});
+});
+</script>
+<hr>
+
+<h1>不显示背景遮照、不允许拖拽、自动关闭<input type="button" id="test8" value="演示[id=test8]"></h1>
+<pre>
+$("#test8").click(function(){
+	$.weeboxs.open('不显示背景遮照、不允许拖拽、五秒钟后自动关闭', {title:'测试<b>5</b>秒后自动关闭', modal:false, draggable:false, timeout:5, 
+		onopen:function(box){
+			var closetime = parseInt(box.dt.find('b').html(),10);
+			var handle = setInterval(function(){
+				alert(1);
+				closetime--;
+				box.dt.find('b').html(closetime+'');
+				if (closetime<=0) clearInterval(handle);
+			}, 1000);
+		}
+	});
+});
+</pre>
+<img alt="" src="demo8.jpg">
+<script type="text/javascript">
+$("#test8").click(function(){
+	$.weeboxs.open('不显示背景遮照、不允许拖拽、五秒钟后自动关闭', {
+		title:'测试<font color="red">5</font>秒后自动关闭', 
+		modal:false,//默认为true 
+		draggable:false,//默认为true
+		timeout:5, //默认为0
+		onopen:function(box){
+			var closetime = parseInt(box.dt.find('font').html(),10);
+			var handle = setInterval(function(){
+				closetime--;
+				box.dt.find('font').html(closetime);
+				if (closetime<=0) clearInterval(handle);
+			}, 1000);
+		}
+	});
+});
+</script>
+<hr>
+</body>
+</html>

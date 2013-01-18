@@ -1,0 +1,13 @@
+
+mysql:
+  host: localhost
+  driver: mysql
+  login: "qeephp-test"
+  password: test
+  database: "qeephp-test-db"
+  prefix: "q_"
+
+default:
+  _use: mysql
+
+

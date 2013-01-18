@@ -1,0 +1,55 @@
+@charset "utf-8";/* OpenWan CSS <thinkgem@163.com> */
+body.bg{background:url(../img/top_bg.gif) repeat-x;}
+.header{height:58px;margin:0 auto;position:relative;}
+.header .logo{width:200px;top:1px;left:10px;overflow:hidden;position:absolute;display:block;}
+.header .info{top:3px;right:5px;position:absolute;}
+.nav{float:left;margin:20px 0 0 250px;height:38px;_margin-left:125px;}
+.nav ul{list-style-type:none;margin:0;padding:0;position:relative;z-index:100;}
+.nav li{width:80px;display:block;float:left;font-size:12px;font-weight:bold;text-align:center;margin:0 4px 0 0;padding:0;height:38px;}
+.nav li a{display:block;text-decoration:none;color:#616c78;height:28px;padding-top:11px;}
+.nav li a:hover{text-decoration:none;color:#8fc400;}
+.nav li.on{width:91px;background:url(../img/nav_on.gif) no-repeat;display:block;float:left;margin:0 4px 0 0;padding:0;height:38px;}
+.nav li.on a{color:#fff;height:28px;padding-top:12px;}
+.nav li.on a:hover{color:#fff;height:28px;padding-top:12px;}
+.nav a:focus{outline: none}
+.content{margin:0 auto;}
+.footer{height:45px;line-height:20px;border-top:1px solid #ccc;padding:4px 0 0 10px;color:#686D70;background:url(../img/bottom_bg.jpg) repeat-x;margin:0 auto;position:relative;}
+.footer a:link,.footer a:visited{text-decoration:none;padding-right:20px;}
+.box {border:1px solid #B0D5EE;background-color:#f9fcff;-moz-border-radius:3px;-khtml-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;}
+/*.box .r1{background-color:#d1d1d1;height:1px;margin-left:4px;margin-right:4px;overflow:hidden;}
+.box .r2{border-left:2px solid #d1d1d1;border-right:2px solid #d1d1d1;height:1px;margin:0 2px;overflow:hidden;}
+.box .r3{border-left:1px solid #d1d1d1;border-right:1px solid #d1d1d1;height:2px;margin:0 1px;overflow:hidden;}*/
+.box .t1,.box .t2{font-size:14px;line-height:25px;border-bottom:1px solid #E4F3F6;/*border-top:0*/;margin:2px 1px;}
+.box .t1{padding-left:25px;background:#EBF8FF url(../img/box_title1.gif) top left no-repeat;}
+.box .t2{padding-left:15px;background:#EBF8FF url(../img/box_title2.gif) top right no-repeat;}
+.box .t3,.box .t4{padding:0 2px;font-size:16px;font-weight:bold;color:#666;height:50px;}
+.box .t3{background:url(../img/box_title3.gif) right bottom no-repeat;}
+.box .t4{background:url(../img/box_title4.gif) right bottom no-repeat;}
+/*.box .c1{border-left:0px solid #d1d1d1;border-right:0px solid #d1d1d1;}
+.box .c21{padding:3px 12px 2px 12px;}.box .c31{padding:3px 5px 2px 5px;}*/
+.tab {line-height:24px;width:100%;}
+.tab a{font-size:12px; border:1px solid #D8E7EB;padding:0 8px;margin:0 5px 5px 0;display:inline-block;}
+.tab a:hover, .tab a.current{border-color:#2366A8;text-decoration:none;color:#2366A8}
+.tb {line-height:23px;width:100%;}
+.tb td{padding:3px;}
+.tb thead td{border-bottom:1px solid #D8E7EB;font-weight:bold;padding-left:2px;color:#555;}
+.tb tbody tr:hover, .tb tbody tr.current {background-color:#eff8ff;}
+.tb tbody td{border-bottom:1px dotted #DEEFFA;}
+.tb tfoot td{padding-top:3px;}
+.tb a.add {background:transparent url(../img/add.gif) no-repeat scroll 0 1px;color:#FF6600;line-height:25px;padding-left:18px;}
+.ul li{padding:3px 0 3px 28px;margin:3px 0;background:transparent url(../img/li.gif) no-repeat 8px 9px;clear:both;line-height:23px;list-style-type:none;-moz-border-radius:3px;-khtml-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;}
+.ul li:hover{background-color:#eff8ff;}
+.ul li a{display:block;}
+.ul li.current{background-color:#E4F3F6;}
+.ul li.current a{font-weight:bold;color:#2366A8;}
+.search form{font-size:14px;}
+.search form p{margin:5px;}
+.search form p a{text-decoration:underline;}
+.search form p a:active{color:#ff6600;}
+.search form .input{font-size:16px;padding:3px 1px;width:410px;}
+.search form .submit{font-size:16px;padding:2px 10px;}
+.search .status{background-color:#F0F7F9;border-top:1px solid #B0D5EE;padding:5px;}
+.search .result{font-size:12px;width:630px;float:left;}
+.search .result li{margin:10px 0;line-height:20px;}
+.search .result li .title{font-size:14px;text-decoration:underline;color:#0000CC;}
+.search .result li .ctrl,.search .result li .ctrl a{color:#008000;}
