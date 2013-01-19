@@ -41,6 +41,7 @@ OpenWan媒媒体资产管理系统集成了先进的硬件架构，采用MPEG-2�
 数据库：MySql 5.1 以上
 
 ## 常见问题
+
 问题：如果你使用IIS服务器并无法进行视频转码。
 解决：为C:\Windows\System32\cmd.exe（系统不是安装在C盘请相应更改）添加IUSER_ComputerName （ComputerName是你的计算机名称）允许用户的读取、运行权限。
 
