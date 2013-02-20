@@ -36,7 +36,7 @@ runtime_cache_dir:              %ROOT_DIR%/tmp/runtime_cache
 #############################
 
 # url 参数的传递模式，可以是标准、PATHINFO、URL 重写等模式，分别对应 standard、pathinfo、rewrite 设置值
-dispatcher_url_mode:            rewrite
+dispatcher_url_mode:            pathinfo
 
 # 指示当没有为控制器提供 ACT 时，要使用的默认 ACT
 acl_default:
